@@ -1,2 +1,8 @@
 {
+  "itemGroup.titanores": "Titan Ores",
+  "block.titanores.solarite_ore": "Minério de Solarita",
+  "block.titanores.solarite_block": "Bloco de Solarita",
+  "item.titanores.solarite_ingot": "Lingote de Solarita",
+  "item.titanores.solarite_nugget": "Pepita de Solarita",
+  "item.titanores.solarite_dust": "Pó de Solarita"
 }

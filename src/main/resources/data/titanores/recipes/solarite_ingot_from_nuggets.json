@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "titanores:solarite_nugget" }
+  },
+  "result": { "item": "titanores:solarite_ingot" }
+}

@@ -1,5 +1,8 @@
 package com.titanmodpack.titanores;
 
+import com.titanmodpack.titanores.init.ModBlocks;
+import com.titanmodpack.titanores.init.ModItems;
+import com.titanmodpack.titanores.world.ModOreGeneration;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -9,31 +12,36 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-// Classe principal do mod. O valor de @Mod precisa ser igual ao mod_id do gradle.properties.
+// Main mod class. The @Mod value must match mod_id in gradle.properties.
 @Mod(TitanOres.MOD_ID)
 public class TitanOres {
     public static final String MOD_ID = "titanores";
 
-    // Logger para escrever mensagens no console/log do jogo.
     public static final Logger LOGGER = LogManager.getLogger();
 
     public TitanOres() {
-        // "Mod event bus": eventos de carregamento do mod (registros, setup, etc.).
+        // Mod event bus: mod loading events (registries, setup, etc.).
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);
 
-        // "Forge event bus": eventos do jogo em andamento (quebrar bloco, entrar no mundo, etc.).
+        // Forge event bus: in-game events (block break, world join, etc.).
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    // Roda no cliente e no servidor, depois que tudo foi registrado.
+    // Runs on both client and server, after all registries are populated.
     private void setup(final FMLCommonSetupEvent event) {
-        LOGGER.info("Titan Ores carregando...");
+        LOGGER.info("Titan Ores loading...");
+        // Worldgen registries are not thread-safe, so they are registered on the main thread.
+        event.enqueueWork(ModOreGeneration::registerFeatures);
     }
 
-    // Roda apenas no cliente (coisas visuais: renderização, teclas, telas).
+    // Client only (rendering, key bindings, screens).
     private void clientSetup(final FMLClientSetupEvent event) {
-        LOGGER.info("Titan Ores: setup do cliente");
+        LOGGER.info("Titan Ores client setup");
     }
 }

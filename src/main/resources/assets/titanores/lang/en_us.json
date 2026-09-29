@@ -1,2 +1,8 @@
 {
+  "itemGroup.titanores": "Titan Ores",
+  "block.titanores.solarite_ore": "Solarite Ore",
+  "block.titanores.solarite_block": "Block of Solarite",
+  "item.titanores.solarite_ingot": "Solarite Ingot",
+  "item.titanores.solarite_nugget": "Solarite Nugget",
+  "item.titanores.solarite_dust": "Solarite Dust"
 }

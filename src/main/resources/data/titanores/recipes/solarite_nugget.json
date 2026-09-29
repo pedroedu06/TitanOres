@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "titanores:solarite_ingot" }
+  ],
+  "result": { "item": "titanores:solarite_nugget", "count": 9 }
+}
