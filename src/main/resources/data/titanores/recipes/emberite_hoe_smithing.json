@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "titanores:solarite_hoe"
+  },
+  "addition": {
+    "item": "titanores:emberite_ingot"
+  },
+  "result": {
+    "item": "titanores:emberite_hoe"
+  }
+}

@@ -54,6 +54,19 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore", () -> blockItem(ModBlocks.EMBERITE_ORE.get()));
     public static final RegistryObject<Item> EMBERITE_BLOCK = ITEMS.register("emberite_block", () -> blockItem(ModBlocks.EMBERITE_BLOCK.get()));
 
+    // Emberite tools: smithing table upgrade of the solarite tools (keeps enchantments).
+    // Final damage = 1 (base) + 6 (tier) + modifier: sword 35, axe 37, others 12.
+    public static final RegistryObject<Item> EMBERITE_SWORD = ITEMS.register("emberite_sword",
+            () -> new SwordItem(ModItemTier.EMBERITE, 28, -2.8F, props()));
+    public static final RegistryObject<Item> EMBERITE_PICKAXE = ITEMS.register("emberite_pickaxe",
+            () -> new PickaxeItem(ModItemTier.EMBERITE, 5, -2.8F, props()));
+    public static final RegistryObject<Item> EMBERITE_AXE = ITEMS.register("emberite_axe",
+            () -> new AxeItem(ModItemTier.EMBERITE, 30.0F, -3.0F, props()));
+    public static final RegistryObject<Item> EMBERITE_SHOVEL = ITEMS.register("emberite_shovel",
+            () -> new ShovelItem(ModItemTier.EMBERITE, 5.0F, -3.0F, props()));
+    public static final RegistryObject<Item> EMBERITE_HOE = ITEMS.register("emberite_hoe",
+            () -> new HoeItem(ModItemTier.EMBERITE, 5, 0.0F, props()));
+
     // Titanium
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::simpleItem);

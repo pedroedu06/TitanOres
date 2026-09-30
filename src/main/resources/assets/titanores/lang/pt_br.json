@@ -31,5 +31,10 @@
   "item.titanores.solarite_axe": "Machado de Solarita",
   "item.titanores.solarite_shovel": "Pá de Solarita",
   "item.titanores.solarite_hoe": "Enxada de Solarita",
-  "item.titanores.solarite_stick": "Graveto de Solarita"
+  "item.titanores.solarite_stick": "Graveto de Solarita",
+  "item.titanores.emberite_sword": "Espada de Emberite",
+  "item.titanores.emberite_pickaxe": "Picareta de Emberite",
+  "item.titanores.emberite_axe": "Machado de Emberite",
+  "item.titanores.emberite_shovel": "Pá de Emberite",
+  "item.titanores.emberite_hoe": "Enxada de Emberite"
 }

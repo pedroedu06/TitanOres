@@ -31,5 +31,10 @@
   "item.titanores.solarite_axe": "Solarite Axe",
   "item.titanores.solarite_shovel": "Solarite Shovel",
   "item.titanores.solarite_hoe": "Solarite Hoe",
-  "item.titanores.solarite_stick": "Solarite Stick"
+  "item.titanores.solarite_stick": "Solarite Stick",
+  "item.titanores.emberite_sword": "Emberite Sword",
+  "item.titanores.emberite_pickaxe": "Emberite Pickaxe",
+  "item.titanores.emberite_axe": "Emberite Axe",
+  "item.titanores.emberite_shovel": "Emberite Shovel",
+  "item.titanores.emberite_hoe": "Emberite Hoe"
 }
