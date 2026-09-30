@@ -25,5 +25,11 @@
   "message.titanores.magnet.on": "ON",
   "message.titanores.magnet.off": "OFF",
   "commands.titanores.hearts.get": "%s comeu %s Corações de Titânio (+%s corações)",
-  "commands.titanores.hearts.set": "%s agora tem %s Corações de Titânio (+%s corações)"
+  "commands.titanores.hearts.set": "%s agora tem %s Corações de Titânio (+%s corações)",
+  "item.titanores.solarite_sword": "Espada de Solarita",
+  "item.titanores.solarite_pickaxe": "Picareta de Solarita",
+  "item.titanores.solarite_axe": "Machado de Solarita",
+  "item.titanores.solarite_shovel": "Pá de Solarita",
+  "item.titanores.solarite_hoe": "Enxada de Solarita",
+  "item.titanores.solarite_stick": "Graveto de Solarita"
 }

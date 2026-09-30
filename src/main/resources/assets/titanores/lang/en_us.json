@@ -25,5 +25,11 @@
   "message.titanores.magnet.on": "ON",
   "message.titanores.magnet.off": "OFF",
   "commands.titanores.hearts.get": "%s has eaten %s Titanium Hearts (+%s hearts)",
-  "commands.titanores.hearts.set": "%s now has %s Titanium Hearts (+%s hearts)"
+  "commands.titanores.hearts.set": "%s now has %s Titanium Hearts (+%s hearts)",
+  "item.titanores.solarite_sword": "Solarite Sword",
+  "item.titanores.solarite_pickaxe": "Solarite Pickaxe",
+  "item.titanores.solarite_axe": "Solarite Axe",
+  "item.titanores.solarite_shovel": "Solarite Shovel",
+  "item.titanores.solarite_hoe": "Solarite Hoe",
+  "item.titanores.solarite_stick": "Solarite Stick"
 }

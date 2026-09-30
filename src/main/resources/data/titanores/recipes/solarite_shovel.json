@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "S",
+    "S"
+  ],
+  "key": {
+    "I": {
+      "item": "titanores:solarite_ingot"
+    },
+    "S": {
+      "item": "titanores:solarite_stick"
+    }
+  },
+  "result": {
+    "item": "titanores:solarite_shovel"
+  }
+}
