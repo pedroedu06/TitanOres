@@ -15,5 +15,13 @@
   "item.titanores.titanium_ingot": "Lingote de Titânio",
   "item.titanores.titanium_nugget": "Pepita de Titânio",
   "item.titanores.titanium_dust": "Pó de Titânio",
-  "item.titanores.titanium_star": "Estrela de Titânio"
+  "item.titanores.titanium_star": "Estrela de Titânio",
+  "item.titanores.titanium_heart": "Coração de Titânio",
+  "item.titanores.solarite_apple": "Maçã de Solarita",
+  "item.titanores.solarite_carrot": "Cenoura de Solarita",
+  "item.titanores.solarite_magnet": "Ímã de Solarita",
+  "block.titanores.solarite_lantern": "Lanterna de Solarita",
+  "message.titanores.magnet": "Ímã: %s",
+  "message.titanores.magnet.on": "ON",
+  "message.titanores.magnet.off": "OFF"
 }

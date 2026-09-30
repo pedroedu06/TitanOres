@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "titanores:solarite_ingot"
+    },
+    "C": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "result": {
+    "item": "titanores:solarite_carrot"
+  }
+}

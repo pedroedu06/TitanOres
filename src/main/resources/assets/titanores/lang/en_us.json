@@ -15,5 +15,13 @@
   "item.titanores.titanium_ingot": "Titanium Ingot",
   "item.titanores.titanium_nugget": "Titanium Nugget",
   "item.titanores.titanium_dust": "Titanium Dust",
-  "item.titanores.titanium_star": "Titanium Star"
+  "item.titanores.titanium_star": "Titanium Star",
+  "item.titanores.titanium_heart": "Titanium Heart",
+  "item.titanores.solarite_apple": "Solarite Apple",
+  "item.titanores.solarite_carrot": "Solarite Carrot",
+  "item.titanores.solarite_magnet": "Solarite Magnet",
+  "block.titanores.solarite_lantern": "Solarite Lantern",
+  "message.titanores.magnet": "Magnet: %s",
+  "message.titanores.magnet.on": "ON",
+  "message.titanores.magnet.off": "OFF"
 }

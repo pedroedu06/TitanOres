@@ -2,6 +2,8 @@ package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.block.ManualMiningOreBlock;
+import com.titanmodpack.titanores.block.SolariteLanternBlock;
+import com.titanmodpack.titanores.block.SolariteLightBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -66,4 +68,17 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .harvestLevel(6)
                     .requiresCorrectToolForDrops()));
+
+    // Light level 15; blocks natural hostile spawns in its 3x3 chunk area. Needs an iron pickaxe or better.
+    public static final RegistryObject<Block> SOLARITE_LANTERN = BLOCKS.register("solarite_lantern",
+            () -> new SolariteLanternBlock(AbstractBlock.Properties.of(Material.GLASS)
+                    .strength(1.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightLevel(state -> 15)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(2)
+                    .requiresCorrectToolForDrops()));
+
+    // Invisible light placed by the Solarite Lantern (no item).
+    public static final RegistryObject<Block> SOLARITE_LIGHT = BLOCKS.register("solarite_light", SolariteLightBlock::new);
 }

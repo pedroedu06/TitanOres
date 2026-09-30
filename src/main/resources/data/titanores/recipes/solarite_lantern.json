@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SLS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "titanores:solarite_ingot"
+    },
+    "L": {
+      "item": "minecraft:sea_lantern"
+    }
+  },
+  "result": {
+    "item": "titanores:solarite_lantern"
+  }
+}
