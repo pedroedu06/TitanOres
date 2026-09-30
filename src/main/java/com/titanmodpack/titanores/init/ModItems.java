@@ -1,9 +1,11 @@
 package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.item.GlowingItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +34,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore", () -> fireproofBlockItem(ModBlocks.TITANIUM_ORE.get()));
     public static final RegistryObject<Item> TITANIUM_BLOCK = ITEMS.register("titanium_block", () -> fireproofBlockItem(ModBlocks.TITANIUM_BLOCK.get()));
+
+    // Upgrade material for titanium tools (smithing table).
+    public static final RegistryObject<Item> TITANIUM_STAR = ITEMS.register("titanium_star",
+            () -> new GlowingItem(new Item.Properties().tab(ModItemGroup.TITAN_ORES).fireResistant().rarity(Rarity.EPIC)));
 
     private static Item simpleItem() {
         return new Item(new Item.Properties().tab(ModItemGroup.TITAN_ORES));

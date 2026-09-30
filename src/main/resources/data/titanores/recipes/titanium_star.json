@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IBI",
+    "BSB",
+    "IBI"
+  ],
+  "key": {
+    "I": { "item": "titanores:titanium_ingot" },
+    "B": { "item": "titanores:titanium_block" },
+    "S": { "item": "minecraft:nether_star" }
+  },
+  "result": { "item": "titanores:titanium_star" }
+}
