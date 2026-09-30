@@ -26,6 +26,13 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore", () -> fireproofBlockItem(ModBlocks.EMBERITE_ORE.get()));
     public static final RegistryObject<Item> EMBERITE_BLOCK = ITEMS.register("emberite_block", () -> fireproofBlockItem(ModBlocks.EMBERITE_BLOCK.get()));
 
+    public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ModItems::fireproofItem);
+    public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::fireproofItem);
+    public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", ModItems::fireproofItem);
+
+    public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore", () -> fireproofBlockItem(ModBlocks.TITANIUM_ORE.get()));
+    public static final RegistryObject<Item> TITANIUM_BLOCK = ITEMS.register("titanium_block", () -> fireproofBlockItem(ModBlocks.TITANIUM_BLOCK.get()));
+
     private static Item simpleItem() {
         return new Item(new Item.Properties().tab(ModItemGroup.TITAN_ORES));
     }

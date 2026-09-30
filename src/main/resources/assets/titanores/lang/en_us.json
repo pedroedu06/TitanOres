@@ -9,5 +9,10 @@
   "block.titanores.emberite_block": "Block of Emberite",
   "item.titanores.emberite_ingot": "Emberite Ingot",
   "item.titanores.emberite_nugget": "Emberite Nugget",
-  "item.titanores.emberite_dust": "Emberite Dust"
+  "item.titanores.emberite_dust": "Emberite Dust",
+  "block.titanores.titanium_ore": "Titanium Ore",
+  "block.titanores.titanium_block": "Block of Titanium",
+  "item.titanores.titanium_ingot": "Titanium Ingot",
+  "item.titanores.titanium_nugget": "Titanium Nugget",
+  "item.titanores.titanium_dust": "Titanium Dust"
 }

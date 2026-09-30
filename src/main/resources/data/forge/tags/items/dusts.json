@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#forge:dusts/solarite",
-    "#forge:dusts/emberite"
+    "#forge:dusts/emberite",
+    "#forge:dusts/titanium"
   ]
 }

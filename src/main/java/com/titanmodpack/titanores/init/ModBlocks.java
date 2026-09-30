@@ -49,4 +49,21 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .harvestLevel(5)
                     .requiresCorrectToolForDrops()));
+
+    // Titanium (endgame) requires level 6 (emberite pickaxe).
+    public static final RegistryObject<Block> TITANIUM_ORE = BLOCKS.register("titanium_ore",
+            () -> new ManualMiningOreBlock(AbstractBlock.Properties.of(Material.STONE)
+                    .strength(3.0F, 1200.0F)
+                    .sound(SoundType.STONE)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(6)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> TITANIUM_BLOCK = BLOCKS.register("titanium_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(5.0F, 1200.0F)
+                    .sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(6)
+                    .requiresCorrectToolForDrops()));
 }

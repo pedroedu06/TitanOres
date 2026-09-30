@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "titanores:solarite_ore",
-    "titanores:emberite_ore",
     "titanores:titanium_ore"
   ]
 }

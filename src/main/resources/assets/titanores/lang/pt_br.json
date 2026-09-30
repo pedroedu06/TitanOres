@@ -9,5 +9,10 @@
   "block.titanores.emberite_block": "Bloco de Emberite",
   "item.titanores.emberite_ingot": "Lingote de Emberite",
   "item.titanores.emberite_nugget": "Pepita de Emberite",
-  "item.titanores.emberite_dust": "Pó de Emberite"
+  "item.titanores.emberite_dust": "Pó de Emberite",
+  "block.titanores.titanium_ore": "Minério de Titânio",
+  "block.titanores.titanium_block": "Bloco de Titânio",
+  "item.titanores.titanium_ingot": "Lingote de Titânio",
+  "item.titanores.titanium_nugget": "Pepita de Titânio",
+  "item.titanores.titanium_dust": "Pó de Titânio"
 }
