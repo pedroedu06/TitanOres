@@ -23,5 +23,7 @@
   "block.titanores.solarite_lantern": "Lanterna de Solarita",
   "message.titanores.magnet": "Ímã: %s",
   "message.titanores.magnet.on": "ON",
-  "message.titanores.magnet.off": "OFF"
+  "message.titanores.magnet.off": "OFF",
+  "commands.titanores.hearts.get": "%s comeu %s Corações de Titânio (+%s corações)",
+  "commands.titanores.hearts.set": "%s agora tem %s Corações de Titânio (+%s corações)"
 }

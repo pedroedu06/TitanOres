@@ -23,5 +23,7 @@
   "block.titanores.solarite_lantern": "Solarite Lantern",
   "message.titanores.magnet": "Magnet: %s",
   "message.titanores.magnet.on": "ON",
-  "message.titanores.magnet.off": "OFF"
+  "message.titanores.magnet.off": "OFF",
+  "commands.titanores.hearts.get": "%s has eaten %s Titanium Hearts (+%s hearts)",
+  "commands.titanores.hearts.set": "%s now has %s Titanium Hearts (+%s hearts)"
 }

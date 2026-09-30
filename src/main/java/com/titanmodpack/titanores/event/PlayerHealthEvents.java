@@ -27,6 +27,19 @@ public class PlayerHealthEvents {
         player.heal((float) HEALTH_PER_HEART_ITEM);
     }
 
+    public static int getHeartItems(PlayerEntity player) {
+        return persistedData(player).getInt(HEARTS_KEY);
+    }
+
+    // Used by /titanores hearts. Clamps current health if max health went down.
+    public static void setHeartItems(PlayerEntity player, int count) {
+        persistedData(player).putInt(HEARTS_KEY, Math.max(0, count));
+        applyModifier(player);
+        if (player.getHealth() > player.getMaxHealth()) {
+            player.setHealth(player.getMaxHealth());
+        }
+    }
+
     private static CompoundNBT persistedData(PlayerEntity player) {
         CompoundNBT root = player.getPersistentData();
         if (!root.contains(PlayerEntity.PERSISTED_NBT_TAG)) {
