@@ -18,11 +18,27 @@ public class ModItems {
     public static final RegistryObject<Item> SOLARITE_ORE = ITEMS.register("solarite_ore", () -> blockItem(ModBlocks.SOLARITE_ORE.get()));
     public static final RegistryObject<Item> SOLARITE_BLOCK = ITEMS.register("solarite_block", () -> blockItem(ModBlocks.SOLARITE_BLOCK.get()));
 
+    // Nether material: fire resistant items, like netherite.
+    public static final RegistryObject<Item> EMBERITE_INGOT = ITEMS.register("emberite_ingot", ModItems::fireproofItem);
+    public static final RegistryObject<Item> EMBERITE_NUGGET = ITEMS.register("emberite_nugget", ModItems::fireproofItem);
+    public static final RegistryObject<Item> EMBERITE_DUST = ITEMS.register("emberite_dust", ModItems::fireproofItem);
+
+    public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore", () -> fireproofBlockItem(ModBlocks.EMBERITE_ORE.get()));
+    public static final RegistryObject<Item> EMBERITE_BLOCK = ITEMS.register("emberite_block", () -> fireproofBlockItem(ModBlocks.EMBERITE_BLOCK.get()));
+
     private static Item simpleItem() {
         return new Item(new Item.Properties().tab(ModItemGroup.TITAN_ORES));
     }
 
     private static Item blockItem(Block block) {
         return new BlockItem(block, new Item.Properties().tab(ModItemGroup.TITAN_ORES));
+    }
+
+    private static Item fireproofItem() {
+        return new Item(new Item.Properties().tab(ModItemGroup.TITAN_ORES).fireResistant());
+    }
+
+    private static Item fireproofBlockItem(Block block) {
+        return new BlockItem(block, new Item.Properties().tab(ModItemGroup.TITAN_ORES).fireResistant());
     }
 }

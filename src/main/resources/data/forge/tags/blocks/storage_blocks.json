@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:storage_blocks/solarite"
+    "#forge:storage_blocks/solarite",
+    "#forge:storage_blocks/emberite"
   ]
 }

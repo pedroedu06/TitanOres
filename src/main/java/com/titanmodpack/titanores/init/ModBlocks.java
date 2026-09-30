@@ -30,6 +30,23 @@ public class ModBlocks {
                     .strength(5.0F, 1200.0F)
                     .sound(SoundType.METAL)
                     .harvestTool(ToolType.PICKAXE)
-                    .harvestLevel(2)
+                    .harvestLevel(4)
+                    .requiresCorrectToolForDrops()));
+
+    // Emberite requires level 5 (solarite pickaxe), one above netherite.
+    public static final RegistryObject<Block> EMBERITE_ORE = BLOCKS.register("emberite_ore",
+            () -> new ManualMiningOreBlock(AbstractBlock.Properties.of(Material.STONE)
+                    .strength(3.0F, 1200.0F)
+                    .sound(SoundType.NETHER_ORE)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(5)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EMBERITE_BLOCK = BLOCKS.register("emberite_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(5.0F, 1200.0F)
+                    .sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(5)
                     .requiresCorrectToolForDrops()));
 }

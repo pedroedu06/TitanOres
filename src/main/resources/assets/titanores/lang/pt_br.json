@@ -4,5 +4,10 @@
   "block.titanores.solarite_block": "Bloco de Solarita",
   "item.titanores.solarite_ingot": "Lingote de Solarita",
   "item.titanores.solarite_nugget": "Pepita de Solarita",
-  "item.titanores.solarite_dust": "Pó de Solarita"
+  "item.titanores.solarite_dust": "Pó de Solarita",
+  "block.titanores.emberite_ore": "Minério de Emberite",
+  "block.titanores.emberite_block": "Bloco de Emberite",
+  "item.titanores.emberite_ingot": "Lingote de Emberite",
+  "item.titanores.emberite_nugget": "Pepita de Emberite",
+  "item.titanores.emberite_dust": "Pó de Emberite"
 }

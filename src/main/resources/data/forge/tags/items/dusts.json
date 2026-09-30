@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:dusts/solarite"
+    "#forge:dusts/solarite",
+    "#forge:dusts/emberite"
   ]
 }

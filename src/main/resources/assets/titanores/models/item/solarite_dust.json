@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "titanores:item/solarite_dust"
+    "layer0": "titanores:item/solarite/solarite_dust"
   }
 }

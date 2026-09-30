@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:nuggets/solarite"
+    "#forge:nuggets/solarite",
+    "#forge:nuggets/emberite"
   ]
 }

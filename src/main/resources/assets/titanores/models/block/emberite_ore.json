@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "titanores:block/solarite/solarite_block"
+    "all": "titanores:block/emberite/emberite_ore"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "titanores:emberite_ingot" }
+  ],
+  "result": { "item": "titanores:emberite_nugget", "count": 9 }
+}

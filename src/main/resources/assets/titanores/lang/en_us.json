@@ -4,5 +4,10 @@
   "block.titanores.solarite_block": "Block of Solarite",
   "item.titanores.solarite_ingot": "Solarite Ingot",
   "item.titanores.solarite_nugget": "Solarite Nugget",
-  "item.titanores.solarite_dust": "Solarite Dust"
+  "item.titanores.solarite_dust": "Solarite Dust",
+  "block.titanores.emberite_ore": "Emberite Ore",
+  "block.titanores.emberite_block": "Block of Emberite",
+  "item.titanores.emberite_ingot": "Emberite Ingot",
+  "item.titanores.emberite_nugget": "Emberite Nugget",
+  "item.titanores.emberite_dust": "Emberite Dust"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "titanores:emberite_ingot" }
+  },
+  "result": { "item": "titanores:emberite_block" }
+}
