@@ -21,6 +21,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
             () -> Ingredient.of(ModItems.EMBERITE_INGOT.get())),
     // 0 durability = not damageable, so titanium armor is unbreakable.
     TITANIUM("titanores:titanium", 0, new int[]{6, 9, 9, 6}, 125, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.25F,
+            () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
+    // 3000 per piece is shown in the tooltip but the game caps total armor at 30; the real
+    // protection of this set is the extra damage reduction in ArmorEvents.
+    TITANIUM_STAR("titanores:titanium_star", 0, new int[]{3000, 3000, 3000, 3000}, 145, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.25F,
             () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
 
     private final String name;

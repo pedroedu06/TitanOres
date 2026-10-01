@@ -8,6 +8,8 @@ import com.titanmodpack.titanores.item.ModArmorMaterial;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.AbstractGui;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -15,8 +17,10 @@ import net.minecraftforge.client.gui.ForgeIngameGui;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-// With a full set of one mod material, the armor bar uses that material's icon
-// (textures/gui/armor_<material>.png, 9x9).
+import javax.annotation.Nullable;
+
+// The armor bar uses a mod material's icon (textures/gui/armor_<material>.png, 9x9): the full set's material,
+// or the tier below the best piece worn when the set is incomplete.
 @Mod.EventBusSubscriber(modid = TitanOres.MOD_ID, value = Dist.CLIENT)
 public class ArmorSetHud {
 
@@ -30,7 +34,7 @@ public class ArmorSetHud {
             return;
         }
         PlayerEntity player = (PlayerEntity) mc.getCameraEntity();
-        ModArmorMaterial material = ModArmorItem.fullSet(player);
+        ModArmorMaterial material = iconMaterial(player);
         if (material == null) {
             return;
         }
@@ -50,5 +54,29 @@ public class ArmorSetHud {
         RenderSystem.disableBlend();
         mc.getTextureManager().bind(AbstractGui.GUI_ICONS_LOCATION);
         ForgeIngameGui.left_height += 10;
+    }
+
+    // The best mod material worn decides the icon: full set of it -> its icon; incomplete -> the tier below
+    // (titanium star -> titanium -> emberite -> solarite -> vanilla bar). Tier order = enum declaration order.
+    @Nullable
+    private static ModArmorMaterial iconMaterial(PlayerEntity player) {
+        ModArmorMaterial fullSet = ModArmorItem.fullSet(player);
+        if (fullSet != null) {
+            return fullSet;
+        }
+        ModArmorMaterial best = null;
+        for (EquipmentSlotType slot : new EquipmentSlotType[]{EquipmentSlotType.HEAD, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.FEET}) {
+            ItemStack stack = player.getItemBySlot(slot);
+            if (stack.getItem() instanceof ModArmorItem) {
+                ModArmorMaterial material = (ModArmorMaterial) ((ModArmorItem) stack.getItem()).getMaterial();
+                if (best == null || material.ordinal() > best.ordinal()) {
+                    best = material;
+                }
+            }
+        }
+        if (best == null || best.ordinal() == 0) {
+            return null;
+        }
+        return ModArmorMaterial.values()[best.ordinal() - 1];
     }
 }

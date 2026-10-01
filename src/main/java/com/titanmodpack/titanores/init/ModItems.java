@@ -127,17 +127,28 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlotType.FEET, props()));
 
     // Titanium Star tools: titanium tool + Titanium Star in the smithing table. Same abilities,
-    // mining speed 23 and a 220 damage sword (1 + 7 + 212). Animated textures.
+    // mining speed 26, 220 damage sword (1 + 7 + 212), 47 axe, 45 pickaxe/shovel/hoe (1 + 7 + 37). Animated textures.
     public static final RegistryObject<Item> TITANIUM_STAR_SWORD = ITEMS.register("titanium_star_sword",
             () -> new TitaniumSwordItem(ModItemTier.TITANIUM_STAR, 212, -3.0F, props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> TITANIUM_STAR_PICKAXE = ITEMS.register("titanium_star_pickaxe",
-            () -> new TitaniumPickaxeItem(ModItemTier.TITANIUM_STAR, 7, -2.8F, props().rarity(Rarity.EPIC)));
+            () -> new TitaniumPickaxeItem(ModItemTier.TITANIUM_STAR, 37, -2.8F, props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> TITANIUM_STAR_AXE = ITEMS.register("titanium_star_axe",
             () -> new TitaniumAxeItem(ModItemTier.TITANIUM_STAR, 39.0F, -3.0F, props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> TITANIUM_STAR_SHOVEL = ITEMS.register("titanium_star_shovel",
-            () -> new TitaniumShovelItem(ModItemTier.TITANIUM_STAR, 7.0F, -3.0F, props().rarity(Rarity.EPIC)));
+            () -> new TitaniumShovelItem(ModItemTier.TITANIUM_STAR, 37.0F, -3.0F, props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> TITANIUM_STAR_HOE = ITEMS.register("titanium_star_hoe",
-            () -> new TitaniumHoeItem(ModItemTier.TITANIUM_STAR, 7, 0.0F, props().rarity(Rarity.EPIC)));
+            () -> new TitaniumHoeItem(ModItemTier.TITANIUM_STAR, 37, 0.0F, props().rarity(Rarity.EPIC)));
+
+    // Titanium Star armor: titanium piece + Titanium Star in the smithing table. Unbreakable, extra abilities
+    // and 90% less damage with the full set (see StarArmorEvents).
+    public static final RegistryObject<Item> TITANIUM_STAR_HELMET = ITEMS.register("titanium_star_helmet",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM_STAR, EquipmentSlotType.HEAD, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_CHESTPLATE = ITEMS.register("titanium_star_chestplate",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM_STAR, EquipmentSlotType.CHEST, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_LEGGINGS = ITEMS.register("titanium_star_leggings",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM_STAR, EquipmentSlotType.LEGS, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_BOOTS = ITEMS.register("titanium_star_boots",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM_STAR, EquipmentSlotType.FEET, props().rarity(Rarity.EPIC)));
 
     // Upgrade material for titanium tools (smithing table).
     public static final RegistryObject<Item> TITANIUM_STAR = ITEMS.register("titanium_star",

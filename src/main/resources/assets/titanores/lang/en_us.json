@@ -68,5 +68,15 @@
   "item.titanores.titanium_helmet": "Titanium Helmet",
   "item.titanores.titanium_chestplate": "Titanium Chestplate",
   "item.titanores.titanium_leggings": "Titanium Leggings",
-  "item.titanores.titanium_boots": "Titanium Boots"
+  "item.titanores.titanium_boots": "Titanium Boots",
+  "key.categories.titanores": "Titan Ores",
+  "key.titanores.night_vision": "Toggle Night Vision",
+  "message.titanores.night_vision": "Night Vision: %s",
+  "tooltip.titanores.armor.star.head": "Infinite breath, Night Vision (press %s)",
+  "tooltip.titanores.armor.star.chest": "Creative flight",
+  "tooltip.titanores.armor.star.set": "Full set: 90% less damage",
+  "item.titanores.titanium_star_helmet": "Titanium Star Helmet",
+  "item.titanores.titanium_star_chestplate": "Titanium Star Chestplate",
+  "item.titanores.titanium_star_leggings": "Titanium Star Leggings",
+  "item.titanores.titanium_star_boots": "Titanium Star Boots"
 }

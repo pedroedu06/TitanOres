@@ -14,7 +14,7 @@ public enum ModItemTier implements IItemTier {
     // 0 uses = not damageable, so titanium tools are unbreakable.
     TITANIUM(7, 0, 18.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
     // Titanium tools upgraded with a Titanium Star: same as TITANIUM, faster mining.
-    TITANIUM_STAR(7, 0, 23.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
+    TITANIUM_STAR(7, 0, 26.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
 
     private final int level;
     private final int uses;

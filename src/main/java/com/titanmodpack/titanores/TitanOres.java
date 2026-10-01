@@ -1,6 +1,8 @@
 package com.titanmodpack.titanores;
 
+import com.titanmodpack.titanores.client.ModKeyBindings;
 import com.titanmodpack.titanores.compat.CuriosCompat;
+import com.titanmodpack.titanores.network.ModNetwork;
 import com.titanmodpack.titanores.init.ModBlocks;
 import com.titanmodpack.titanores.init.ModItems;
 import com.titanmodpack.titanores.init.ModLootModifiers;
@@ -34,6 +36,7 @@ public class TitanOres {
         ModTileEntities.TILE_ENTITIES.register(modEventBus);
         ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
         ModRecipes.SERIALIZERS.register(modEventBus);
+        ModNetwork.register();
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);
@@ -60,5 +63,6 @@ public class TitanOres {
     // Client only (rendering, key bindings, screens).
     private void clientSetup(final FMLClientSetupEvent event) {
         LOGGER.info("Titan Ores client setup");
+        ModKeyBindings.register();
     }
 }

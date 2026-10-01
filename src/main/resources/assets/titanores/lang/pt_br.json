@@ -68,5 +68,15 @@
   "item.titanores.titanium_helmet": "Capacete de Titânio",
   "item.titanores.titanium_chestplate": "Peitoral de Titânio",
   "item.titanores.titanium_leggings": "Calça de Titânio",
-  "item.titanores.titanium_boots": "Botas de Titânio"
+  "item.titanores.titanium_boots": "Botas de Titânio",
+  "key.categories.titanores": "Titan Ores",
+  "key.titanores.night_vision": "Alternar Visão Noturna",
+  "message.titanores.night_vision": "Visão Noturna: %s",
+  "tooltip.titanores.armor.star.head": "Respiração infinita, Visão Noturna (aperte %s)",
+  "tooltip.titanores.armor.star.chest": "Voo de criativo",
+  "tooltip.titanores.armor.star.set": "Set completo: 90% menos dano",
+  "item.titanores.titanium_star_helmet": "Capacete Estelar de Titânio",
+  "item.titanores.titanium_star_chestplate": "Peitoral Estelar de Titânio",
+  "item.titanores.titanium_star_leggings": "Calça Estelar de Titânio",
+  "item.titanores.titanium_star_boots": "Botas Estelar de Titânio"
 }
