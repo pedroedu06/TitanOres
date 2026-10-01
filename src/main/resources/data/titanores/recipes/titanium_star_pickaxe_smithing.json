@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "titanores:titanium_pickaxe"
+  },
+  "addition": {
+    "item": "titanores:titanium_star"
+  },
+  "result": {
+    "item": "titanores:titanium_star_pickaxe"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "titanores:item/titanium/animated/titanium_star_hoe"
+  }
+}

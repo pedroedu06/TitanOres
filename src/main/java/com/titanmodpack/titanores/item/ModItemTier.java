@@ -12,7 +12,9 @@ public enum ModItemTier implements IItemTier {
     SOLARITE(5, 12000, 10.0F, 5.0F, 85, () -> Ingredient.of(ModItems.SOLARITE_INGOT.get())),
     EMBERITE(6, 24000, 15.0F, 6.0F, 85, () -> Ingredient.of(ModItems.EMBERITE_INGOT.get())),
     // 0 uses = not damageable, so titanium tools are unbreakable.
-    TITANIUM(7, 0, 18.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
+    TITANIUM(7, 0, 18.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get())),
+    // Titanium tools upgraded with a Titanium Star: same as TITANIUM, faster mining.
+    TITANIUM_STAR(7, 0, 23.0F, 7.0F, 85, () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
 
     private final int level;
     private final int uses;

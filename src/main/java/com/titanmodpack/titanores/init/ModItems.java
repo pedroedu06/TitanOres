@@ -93,6 +93,19 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe",
             () -> new TitaniumHoeItem(ModItemTier.TITANIUM, 7, 0.0F, props()));
 
+    // Titanium Star tools: titanium tool + Titanium Star in the smithing table. Same abilities,
+    // mining speed 23 and a 220 damage sword (1 + 7 + 212). Animated textures.
+    public static final RegistryObject<Item> TITANIUM_STAR_SWORD = ITEMS.register("titanium_star_sword",
+            () -> new TitaniumSwordItem(ModItemTier.TITANIUM_STAR, 212, -3.0F, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_PICKAXE = ITEMS.register("titanium_star_pickaxe",
+            () -> new TitaniumPickaxeItem(ModItemTier.TITANIUM_STAR, 7, -2.8F, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_AXE = ITEMS.register("titanium_star_axe",
+            () -> new TitaniumAxeItem(ModItemTier.TITANIUM_STAR, 39.0F, -3.0F, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_SHOVEL = ITEMS.register("titanium_star_shovel",
+            () -> new TitaniumShovelItem(ModItemTier.TITANIUM_STAR, 7.0F, -3.0F, props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> TITANIUM_STAR_HOE = ITEMS.register("titanium_star_hoe",
+            () -> new TitaniumHoeItem(ModItemTier.TITANIUM_STAR, 7, 0.0F, props().rarity(Rarity.EPIC)));
+
     // Upgrade material for titanium tools (smithing table).
     public static final RegistryObject<Item> TITANIUM_STAR = ITEMS.register("titanium_star",
             () -> new GlowingItem(props().rarity(Rarity.EPIC)));
