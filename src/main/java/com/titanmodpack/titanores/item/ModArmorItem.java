@@ -43,6 +43,12 @@ public class ModArmorItem extends ArmorItem {
         return material;
     }
 
+    // Unbreakable armor (titanium) is not enchantable by default; all of the mod's armor should be.
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
     @Override
     public void appendHoverText(ItemStack stack, @Nullable World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
         tooltip.add(new TranslationTextComponent("tooltip.titanores.armor." + getSlot().getName()).withStyle(TextFormatting.GOLD));

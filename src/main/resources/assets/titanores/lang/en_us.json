@@ -60,5 +60,13 @@
   "tooltip.titanores.armor.head": "Aqua Affinity",
   "tooltip.titanores.armor.chest": "Immune to Wither",
   "tooltip.titanores.armor.legs": "Immune to fire and lava",
-  "tooltip.titanores.armor.feet": "No fall damage"
+  "tooltip.titanores.armor.feet": "No fall damage",
+  "item.titanores.emberite_helmet": "Emberite Helmet",
+  "item.titanores.emberite_chestplate": "Emberite Chestplate",
+  "item.titanores.emberite_leggings": "Emberite Leggings",
+  "item.titanores.emberite_boots": "Emberite Boots",
+  "item.titanores.titanium_helmet": "Titanium Helmet",
+  "item.titanores.titanium_chestplate": "Titanium Chestplate",
+  "item.titanores.titanium_leggings": "Titanium Leggings",
+  "item.titanores.titanium_boots": "Titanium Boots"
 }

@@ -1,0 +1,19 @@
+{
+  "type": "titanores:upgrade_shaped",
+  "pattern": [
+    "IAI",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "titanores:emberite_ingot"
+    },
+    "A": {
+      "item": "titanores:solarite_chestplate"
+    }
+  },
+  "result": {
+    "item": "titanores:emberite_chestplate"
+  }
+}

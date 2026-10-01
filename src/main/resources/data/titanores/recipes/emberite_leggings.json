@@ -1,0 +1,19 @@
+{
+  "type": "titanores:upgrade_shaped",
+  "pattern": [
+    "III",
+    "IAI",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "titanores:emberite_ingot"
+    },
+    "A": {
+      "item": "titanores:solarite_leggings"
+    }
+  },
+  "result": {
+    "item": "titanores:emberite_leggings"
+  }
+}

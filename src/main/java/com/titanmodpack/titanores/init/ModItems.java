@@ -85,6 +85,16 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_HOE = ITEMS.register("emberite_hoe",
             () -> new HoeItem(ModItemTier.EMBERITE, 5, 0.0F, props()));
 
+    // Emberite armor (solarite piece + emberite ingots, keeps enchantments): 5/8/10/5, toughness 4.5, knockback 0.2.
+    public static final RegistryObject<Item> EMBERITE_HELMET = ITEMS.register("emberite_helmet",
+            () -> new ModArmorItem(ModArmorMaterial.EMBERITE, EquipmentSlotType.HEAD, props()));
+    public static final RegistryObject<Item> EMBERITE_CHESTPLATE = ITEMS.register("emberite_chestplate",
+            () -> new ModArmorItem(ModArmorMaterial.EMBERITE, EquipmentSlotType.CHEST, props()));
+    public static final RegistryObject<Item> EMBERITE_LEGGINGS = ITEMS.register("emberite_leggings",
+            () -> new ModArmorItem(ModArmorMaterial.EMBERITE, EquipmentSlotType.LEGS, props()));
+    public static final RegistryObject<Item> EMBERITE_BOOTS = ITEMS.register("emberite_boots",
+            () -> new ModArmorItem(ModArmorMaterial.EMBERITE, EquipmentSlotType.FEET, props()));
+
     // Titanium
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::simpleItem);
@@ -105,6 +115,16 @@ public class ModItems {
             () -> new TitaniumShovelItem(ModItemTier.TITANIUM, 7.0F, -3.0F, props()));
     public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe",
             () -> new TitaniumHoeItem(ModItemTier.TITANIUM, 7, 0.0F, props()));
+
+    // Titanium armor (emberite piece + titanium ingots, keeps enchantments): 6/9/9/6, toughness 5, knockback 0.25. Unbreakable.
+    public static final RegistryObject<Item> TITANIUM_HELMET = ITEMS.register("titanium_helmet",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlotType.HEAD, props()));
+    public static final RegistryObject<Item> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlotType.CHEST, props()));
+    public static final RegistryObject<Item> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlotType.LEGS, props()));
+    public static final RegistryObject<Item> TITANIUM_BOOTS = ITEMS.register("titanium_boots",
+            () -> new ModArmorItem(ModArmorMaterial.TITANIUM, EquipmentSlotType.FEET, props()));
 
     // Titanium Star tools: titanium tool + Titanium Star in the smithing table. Same abilities,
     // mining speed 23 and a 220 damage sword (1 + 7 + 212). Animated textures.

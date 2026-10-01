@@ -1,0 +1,18 @@
+{
+  "type": "titanores:upgrade_shaped",
+  "pattern": [
+    "III",
+    "IAI"
+  ],
+  "key": {
+    "I": {
+      "item": "titanores:emberite_ingot"
+    },
+    "A": {
+      "item": "titanores:solarite_helmet"
+    }
+  },
+  "result": {
+    "item": "titanores:emberite_helmet"
+  }
+}

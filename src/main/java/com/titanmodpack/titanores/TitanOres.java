@@ -4,6 +4,7 @@ import com.titanmodpack.titanores.compat.CuriosCompat;
 import com.titanmodpack.titanores.init.ModBlocks;
 import com.titanmodpack.titanores.init.ModItems;
 import com.titanmodpack.titanores.init.ModLootModifiers;
+import com.titanmodpack.titanores.init.ModRecipes;
 import com.titanmodpack.titanores.init.ModTileEntities;
 import com.titanmodpack.titanores.world.ModOreGeneration;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +33,7 @@ public class TitanOres {
         ModItems.ITEMS.register(modEventBus);
         ModTileEntities.TILE_ENTITIES.register(modEventBus);
         ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
+        ModRecipes.SERIALIZERS.register(modEventBus);
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);

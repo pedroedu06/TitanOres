@@ -16,7 +16,12 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements IArmorMaterial {
     // Defense order: boots, leggings, chestplate, helmet. Durability is the same for every piece.
     SOLARITE("titanores:solarite", 12000, new int[]{4, 9, 7, 4}, 85, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.5F, 0.15F,
-            () -> Ingredient.of(ModItems.SOLARITE_INGOT.get()));
+            () -> Ingredient.of(ModItems.SOLARITE_INGOT.get())),
+    EMBERITE("titanores:emberite", 24000, new int[]{5, 10, 8, 5}, 105, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.5F, 0.2F,
+            () -> Ingredient.of(ModItems.EMBERITE_INGOT.get())),
+    // 0 durability = not damageable, so titanium armor is unbreakable.
+    TITANIUM("titanores:titanium", 0, new int[]{6, 9, 9, 6}, 125, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 0.25F,
+            () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()));
 
     private final String name;
     private final int durability;

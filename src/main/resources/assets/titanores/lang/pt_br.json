@@ -60,5 +60,13 @@
   "tooltip.titanores.armor.head": "Afinidade Aquática",
   "tooltip.titanores.armor.chest": "Imune ao Wither",
   "tooltip.titanores.armor.legs": "Imune a fogo e lava",
-  "tooltip.titanores.armor.feet": "Sem dano de queda"
+  "tooltip.titanores.armor.feet": "Sem dano de queda",
+  "item.titanores.emberite_helmet": "Capacete de Emberite",
+  "item.titanores.emberite_chestplate": "Peitoral de Emberite",
+  "item.titanores.emberite_leggings": "Calça de Emberite",
+  "item.titanores.emberite_boots": "Botas de Emberite",
+  "item.titanores.titanium_helmet": "Capacete de Titânio",
+  "item.titanores.titanium_chestplate": "Peitoral de Titânio",
+  "item.titanores.titanium_leggings": "Calça de Titânio",
+  "item.titanores.titanium_boots": "Botas de Titânio"
 }
