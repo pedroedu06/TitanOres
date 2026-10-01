@@ -36,5 +36,16 @@
   "item.titanores.emberite_pickaxe": "Picareta de Emberite",
   "item.titanores.emberite_axe": "Machado de Emberite",
   "item.titanores.emberite_shovel": "Pá de Emberite",
-  "item.titanores.emberite_hoe": "Enxada de Emberite"
+  "item.titanores.emberite_hoe": "Enxada de Emberite",
+  "message.titanores.area_mode": "Modo Área: %s",
+  "message.titanores.on": "ON",
+  "message.titanores.off": "OFF",
+  "tooltip.titanores.toggle_hint": "Shift + botão direito para alternar",
+  "tooltip.titanores.tree_felling": "Derruba a árvore inteira (agache para quebrar só um tronco)",
+  "tooltip.titanores.fire_aspect": "Incendeia os alvos",
+  "item.titanores.titanium_sword": "Espada de Titânio",
+  "item.titanores.titanium_pickaxe": "Picareta de Titânio",
+  "item.titanores.titanium_axe": "Machado de Titânio",
+  "item.titanores.titanium_shovel": "Pá de Titânio",
+  "item.titanores.titanium_hoe": "Enxada de Titânio"
 }

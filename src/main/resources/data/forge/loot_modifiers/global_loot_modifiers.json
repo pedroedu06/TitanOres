@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "titanores:solarite_apple_from_bartering"
+    "titanores:solarite_apple_from_bartering",
+    "titanores:auto_smelt"
   ]
 }

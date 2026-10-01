@@ -4,7 +4,12 @@ import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.item.GlowingItem;
 import com.titanmodpack.titanores.item.ModItemTier;
 import com.titanmodpack.titanores.item.SolariteMagnetItem;
+import com.titanmodpack.titanores.item.TitaniumAxeItem;
 import com.titanmodpack.titanores.item.TitaniumHeartItem;
+import com.titanmodpack.titanores.item.TitaniumHoeItem;
+import com.titanmodpack.titanores.item.TitaniumPickaxeItem;
+import com.titanmodpack.titanores.item.TitaniumShovelItem;
+import com.titanmodpack.titanores.item.TitaniumSwordItem;
 import net.minecraft.block.Block;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
@@ -74,6 +79,19 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore", () -> blockItem(ModBlocks.TITANIUM_ORE.get()));
     public static final RegistryObject<Item> TITANIUM_BLOCK = ITEMS.register("titanium_block", () -> blockItem(ModBlocks.TITANIUM_BLOCK.get()));
+
+    // Titanium tools: smithing table upgrade of the emberite tools. Unbreakable, with special abilities.
+    // Final damage = 1 (base) + 7 (tier) + modifier: sword 45, axe 47, others 15.
+    public static final RegistryObject<Item> TITANIUM_SWORD = ITEMS.register("titanium_sword",
+            () -> new TitaniumSwordItem(ModItemTier.TITANIUM, 37, -3.0F, props()));
+    public static final RegistryObject<Item> TITANIUM_PICKAXE = ITEMS.register("titanium_pickaxe",
+            () -> new TitaniumPickaxeItem(ModItemTier.TITANIUM, 7, -2.8F, props()));
+    public static final RegistryObject<Item> TITANIUM_AXE = ITEMS.register("titanium_axe",
+            () -> new TitaniumAxeItem(ModItemTier.TITANIUM, 39.0F, -3.0F, props()));
+    public static final RegistryObject<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel",
+            () -> new TitaniumShovelItem(ModItemTier.TITANIUM, 7.0F, -3.0F, props()));
+    public static final RegistryObject<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe",
+            () -> new TitaniumHoeItem(ModItemTier.TITANIUM, 7, 0.0F, props()));
 
     // Upgrade material for titanium tools (smithing table).
     public static final RegistryObject<Item> TITANIUM_STAR = ITEMS.register("titanium_star",

@@ -36,5 +36,16 @@
   "item.titanores.emberite_pickaxe": "Emberite Pickaxe",
   "item.titanores.emberite_axe": "Emberite Axe",
   "item.titanores.emberite_shovel": "Emberite Shovel",
-  "item.titanores.emberite_hoe": "Emberite Hoe"
+  "item.titanores.emberite_hoe": "Emberite Hoe",
+  "message.titanores.area_mode": "Area Mode: %s",
+  "message.titanores.on": "ON",
+  "message.titanores.off": "OFF",
+  "tooltip.titanores.toggle_hint": "Shift + Right-click to toggle",
+  "tooltip.titanores.tree_felling": "Fells whole trees (sneak to break a single log)",
+  "tooltip.titanores.fire_aspect": "Sets targets on fire",
+  "item.titanores.titanium_sword": "Titanium Sword",
+  "item.titanores.titanium_pickaxe": "Titanium Pickaxe",
+  "item.titanores.titanium_axe": "Titanium Axe",
+  "item.titanores.titanium_shovel": "Titanium Shovel",
+  "item.titanores.titanium_hoe": "Titanium Hoe"
 }

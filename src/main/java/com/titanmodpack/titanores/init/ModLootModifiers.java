@@ -1,6 +1,7 @@
 package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.loot.AutoSmeltModifier;
 import com.titanmodpack.titanores.loot.ReplaceWithItemModifier;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.fml.RegistryObject;
@@ -13,4 +14,7 @@ public class ModLootModifiers {
 
     public static final RegistryObject<GlobalLootModifierSerializer<?>> REPLACE_WITH_ITEM =
             LOOT_MODIFIERS.register("replace_with_item", ReplaceWithItemModifier.Serializer::new);
+
+    public static final RegistryObject<GlobalLootModifierSerializer<?>> AUTO_SMELT =
+            LOOT_MODIFIERS.register("auto_smelt", AutoSmeltModifier.Serializer::new);
 }
