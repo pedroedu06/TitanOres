@@ -52,5 +52,13 @@
   "item.titanores.titanium_star_pickaxe": "Picareta Estelar de Titânio",
   "item.titanores.titanium_star_axe": "Machado Estelar de Titânio",
   "item.titanores.titanium_star_shovel": "Pá Estelar de Titânio",
-  "item.titanores.titanium_star_hoe": "Enxada Estelar de Titânio"
+  "item.titanores.titanium_star_hoe": "Enxada Estelar de Titânio",
+  "item.titanores.solarite_helmet": "Capacete de Solarita",
+  "item.titanores.solarite_chestplate": "Peitoral de Solarita",
+  "item.titanores.solarite_leggings": "Calça de Solarita",
+  "item.titanores.solarite_boots": "Botas de Solarita",
+  "tooltip.titanores.armor.head": "Afinidade Aquática",
+  "tooltip.titanores.armor.chest": "Imune ao Wither",
+  "tooltip.titanores.armor.legs": "Imune a fogo e lava",
+  "tooltip.titanores.armor.feet": "Sem dano de queda"
 }

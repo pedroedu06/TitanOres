@@ -52,5 +52,13 @@
   "item.titanores.titanium_star_pickaxe": "Titanium Star Pickaxe",
   "item.titanores.titanium_star_axe": "Titanium Star Axe",
   "item.titanores.titanium_star_shovel": "Titanium Star Shovel",
-  "item.titanores.titanium_star_hoe": "Titanium Star Hoe"
+  "item.titanores.titanium_star_hoe": "Titanium Star Hoe",
+  "item.titanores.solarite_helmet": "Solarite Helmet",
+  "item.titanores.solarite_chestplate": "Solarite Chestplate",
+  "item.titanores.solarite_leggings": "Solarite Leggings",
+  "item.titanores.solarite_boots": "Solarite Boots",
+  "tooltip.titanores.armor.head": "Aqua Affinity",
+  "tooltip.titanores.armor.chest": "Immune to Wither",
+  "tooltip.titanores.armor.legs": "Immune to fire and lava",
+  "tooltip.titanores.armor.feet": "No fall damage"
 }

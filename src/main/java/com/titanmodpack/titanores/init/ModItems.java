@@ -11,6 +11,9 @@ import com.titanmodpack.titanores.item.TitaniumPickaxeItem;
 import com.titanmodpack.titanores.item.TitaniumShovelItem;
 import com.titanmodpack.titanores.item.TitaniumSwordItem;
 import net.minecraft.block.Block;
+import com.titanmodpack.titanores.item.ModArmorMaterial;
+import net.minecraft.inventory.EquipmentSlotType;
+import com.titanmodpack.titanores.item.ModArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Food;
@@ -50,6 +53,16 @@ public class ModItems {
             () -> new ShovelItem(ModItemTier.SOLARITE, 1.5F, -3.0F, props()));
     public static final RegistryObject<Item> SOLARITE_HOE = ITEMS.register("solarite_hoe",
             () -> new HoeItem(ModItemTier.SOLARITE, -5, 0.0F, props()));
+
+    // Solarite armor: 4/7/9/4 (24), toughness 3.5 and knockback resistance 0.15 per piece.
+    public static final RegistryObject<Item> SOLARITE_HELMET = ITEMS.register("solarite_helmet",
+            () -> new ModArmorItem(ModArmorMaterial.SOLARITE, EquipmentSlotType.HEAD, props()));
+    public static final RegistryObject<Item> SOLARITE_CHESTPLATE = ITEMS.register("solarite_chestplate",
+            () -> new ModArmorItem(ModArmorMaterial.SOLARITE, EquipmentSlotType.CHEST, props()));
+    public static final RegistryObject<Item> SOLARITE_LEGGINGS = ITEMS.register("solarite_leggings",
+            () -> new ModArmorItem(ModArmorMaterial.SOLARITE, EquipmentSlotType.LEGS, props()));
+    public static final RegistryObject<Item> SOLARITE_BOOTS = ITEMS.register("solarite_boots",
+            () -> new ModArmorItem(ModArmorMaterial.SOLARITE, EquipmentSlotType.FEET, props()));
 
     // Emberite
     public static final RegistryObject<Item> EMBERITE_INGOT = ITEMS.register("emberite_ingot", ModItems::simpleItem);
