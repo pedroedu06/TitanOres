@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "titanores:block/titan_factory"
+    },
+    "facing=east": {
+      "model": "titanores:block/titan_factory",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "titanores:block/titan_factory",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "titanores:block/titan_factory",
+      "y": 270
+    }
+  }
+}

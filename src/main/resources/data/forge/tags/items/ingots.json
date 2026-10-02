@@ -3,6 +3,7 @@
   "values": [
     "#forge:ingots/solarite",
     "#forge:ingots/emberite",
-    "#forge:ingots/titanium"
+    "#forge:ingots/titanium",
+    "#forge:ingots/emberium"
   ]
 }

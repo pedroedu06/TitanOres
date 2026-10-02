@@ -4,6 +4,7 @@ import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.block.ManualMiningOreBlock;
 import com.titanmodpack.titanores.block.SolariteLanternBlock;
 import com.titanmodpack.titanores.block.SolariteLightBlock;
+import com.titanmodpack.titanores.block.TitanFactoryBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -79,6 +80,24 @@ public class ModBlocks {
                     .harvestLevel(2)
                     .requiresCorrectToolForDrops()));
 
+    // Emberium (emberite + titanium alloy) storage block: emberite pickaxe or better, like titanium.
+    public static final RegistryObject<Block> EMBERIUM_BLOCK = BLOCKS.register("emberium_block",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(5.0F, 1200.0F)
+                    .sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(6)
+                    .requiresCorrectToolForDrops()));
+
     // Invisible light placed by the Solarite Lantern (no item).
     public static final RegistryObject<Block> SOLARITE_LIGHT = BLOCKS.register("solarite_light", SolariteLightBlock::new);
+
+    // Machine (energy and recipes come later).
+    public static final RegistryObject<Block> TITAN_FACTORY = BLOCKS.register("titan_factory",
+            () -> new TitanFactoryBlock(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(3.5F)
+                    .sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(1)
+                    .requiresCorrectToolForDrops()));
 }

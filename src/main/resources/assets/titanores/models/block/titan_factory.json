@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "titanores:block/titan_factory/titan_factory_side",
+    "north": "titanores:block/titan_factory/titan_factory_front",
+    "south": "titanores:block/titan_factory/titan_factory_back",
+    "east": "titanores:block/titan_factory/titan_factory_side",
+    "west": "titanores:block/titan_factory/titan_factory_side",
+    "up": "titanores:block/titan_factory/titan_factory_top",
+    "down": "titanores:block/titan_factory/titan_factory_bottom"
+  }
+}

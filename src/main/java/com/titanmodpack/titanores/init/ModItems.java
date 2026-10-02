@@ -150,6 +150,11 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_STAR_BOOTS = ITEMS.register("titanium_star_boots",
             () -> new ModArmorItem(ModArmorMaterial.TITANIUM_STAR, EquipmentSlotType.FEET, props().rarity(Rarity.EPIC)));
 
+    // Emberium: emberite + titanium alloy. No recipes yet (will come from the Titan Factory).
+    public static final RegistryObject<Item> EMBERIUM_INGOT = ITEMS.register("emberium_ingot", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERIUM_DUST = ITEMS.register("emberium_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERIUM_BLOCK = ITEMS.register("emberium_block", () -> blockItem(ModBlocks.EMBERIUM_BLOCK.get()));
+
     // Upgrade material for titanium tools (smithing table).
     public static final RegistryObject<Item> TITANIUM_STAR = ITEMS.register("titanium_star",
             () -> new GlowingItem(props().rarity(Rarity.EPIC)));
@@ -183,6 +188,8 @@ public class ModItems {
             () -> new SolariteMagnetItem(props().stacksTo(1)));
 
     public static final RegistryObject<Item> SOLARITE_LANTERN = ITEMS.register("solarite_lantern", () -> blockItem(ModBlocks.SOLARITE_LANTERN.get()));
+
+    public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
 
     private static Item.Properties props() {
         return new Item.Properties().tab(ModItemGroup.TITAN_ORES).fireResistant();

@@ -78,5 +78,10 @@
   "item.titanores.titanium_star_helmet": "Capacete Estelar de Titânio",
   "item.titanores.titanium_star_chestplate": "Peitoral Estelar de Titânio",
   "item.titanores.titanium_star_leggings": "Calça Estelar de Titânio",
-  "item.titanores.titanium_star_boots": "Botas Estelar de Titânio"
+  "item.titanores.titanium_star_boots": "Botas Estelar de Titânio",
+  "block.titanores.titan_factory": "Fábrica Titan",
+  "container.titanores.titan_factory": "Fábrica Titan",
+  "item.titanores.emberium_ingot": "Lingote de Emberium",
+  "item.titanores.emberium_dust": "Pó de Emberium",
+  "block.titanores.emberium_block": "Bloco de Emberium"
 }

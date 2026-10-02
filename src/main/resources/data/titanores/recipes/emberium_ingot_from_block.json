@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "titanores:emberium_block"
+    }
+  ],
+  "result": {
+    "item": "titanores:emberium_ingot",
+    "count": 9
+  }
+}

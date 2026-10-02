@@ -3,6 +3,7 @@
   "values": [
     "#forge:storage_blocks/solarite",
     "#forge:storage_blocks/emberite",
-    "#forge:storage_blocks/titanium"
+    "#forge:storage_blocks/titanium",
+    "#forge:storage_blocks/emberium"
   ]
 }
