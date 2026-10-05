@@ -1,0 +1,17 @@
+{
+  "type": "titanores:titan_factory",
+  "left": [
+    {"item": "minecraft:clock"},
+    {"type": "forge:nbt", "item": "minecraft:potion", "nbt": "{Potion:\"minecraft:swiftness\"}"},
+    {"item": "titanores:solarite_ingot"}
+  ],
+  "right": [
+    {"item": "minecraft:clock"},
+    {"type": "forge:nbt", "item": "minecraft:potion", "nbt": "{Potion:\"minecraft:swiftness\"}"},
+    {"item": "titanores:solarite_ingot"}
+  ],
+  "mirrored": true,
+  "energy": 800000,
+  "time": 200,
+  "result": {"item": "titanores:speed_upgrade", "count": 1}
+}

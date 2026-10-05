@@ -83,5 +83,9 @@
   "container.titanores.titan_factory": "Fábrica Titan",
   "item.titanores.emberium_ingot": "Lingote de Emberium",
   "item.titanores.emberium_dust": "Pó de Emberium",
-  "block.titanores.emberium_block": "Bloco de Emberium"
+  "block.titanores.emberium_block": "Bloco de Emberium",
+  "tooltip.titanores.energy": "%s / %s FE",
+  "tooltip.titanores.progress": "Progresso: %s%%",
+  "item.titanores.speed_upgrade": "Upgrade de Velocidade",
+  "tooltip.titanores.speed_upgrades": "Upgrades de velocidade: %s/%s (velocidade x%s)"
 }

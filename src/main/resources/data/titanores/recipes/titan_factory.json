@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IVI",
+    "GMG",
+    "SGS"
+  ],
+  "key": {
+    "I": {
+      "item": "titanores:emberite_ingot"
+    },
+    "S": {
+      "item": "titanores:solarite_ingot"
+    },
+    "V": {
+      "tag": "forge:glass/colorless"
+    },
+    "G": {
+      "tag": "forge:gears/iron"
+    },
+    "M": {
+      "tag": "titanores:machine_blocks"
+    }
+  },
+  "result": {
+    "item": "titanores:titan_factory",
+    "count": 1
+  }
+}

@@ -191,6 +191,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
 
+    // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
+    public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);
+
     private static Item.Properties props() {
         return new Item.Properties().tab(ModItemGroup.TITAN_ORES).fireResistant();
     }

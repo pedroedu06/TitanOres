@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mekanism:steel_casing",
+      "required": false
+    },
+    {
+      "id": "thermal:machine_frame",
+      "required": false
+    },
+    {
+      "id": "industrialforegoing:machine_frame_pity",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:light_engineering",
+      "required": false
+    },
+    {
+      "id": "rftoolsbase:machine_frame",
+      "required": false
+    }
+  ]
+}

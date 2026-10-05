@@ -74,6 +74,9 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
+            // More memory for the test game (Mekanism + Powah + JEI are heavy).
+            jvmArgs '-Xms2G', '-Xmx6G'
+
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -110,6 +113,20 @@ repositories {
         name = 'Curios'
         url = 'https://maven.theillusivec4.top/'
     }
+    maven {
+        name = 'JEI'
+        url = 'https://dvs1.progwml6.com/files/maven/'
+    }
+    maven {
+        name = 'Mekanism'
+        url = 'https://modmaven.dev/'
+    }
+    // CurseForge files (Powah + Lollipop, Thermal Foundation + CoFH Core): curse.maven:<slug>-<projectId>:<fileId>
+    maven {
+        name = 'CurseMaven'
+        url = 'https://cursemaven.com'
+        content { includeGroup 'curse.maven' }
+    }
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so:
     // flatDir {
@@ -128,6 +145,18 @@ dependencies {
     // Curios API (optional): lets the Solarite Magnet work from a charm slot.
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-${curios_version}:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${minecraft_version}-${curios_version}")
+
+    // JEI: API to compile against (recipe categories for the Titan Factory later) + full mod in the test game.
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
+
+    // Test-only mods (not dependencies of TitanOres): energy sources/cables to test the Titan Factory.
+    runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}")
+    runtimeOnly fg.deobf("curse.maven:powah-352656:${powah_file_id}")
+    runtimeOnly fg.deobf("curse.maven:lollipop-347954:${lollipop_file_id}")
+    // Thermal Foundation (+ CoFH Core) for testing: provides an iron gear tagged forge:gears/iron
+    runtimeOnly fg.deobf("curse.maven:thermal-foundation-222880:${thermal_foundation_file_id}")
+    runtimeOnly fg.deobf("curse.maven:cofh-core-69162:${cofh_core_file_id}")
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

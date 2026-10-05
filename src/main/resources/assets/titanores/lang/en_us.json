@@ -83,5 +83,9 @@
   "container.titanores.titan_factory": "Titan Factory",
   "item.titanores.emberium_ingot": "Emberium Ingot",
   "item.titanores.emberium_dust": "Emberium Dust",
-  "block.titanores.emberium_block": "Block of Emberium"
+  "block.titanores.emberium_block": "Block of Emberium",
+  "tooltip.titanores.energy": "%s / %s FE",
+  "tooltip.titanores.progress": "Progress: %s%%",
+  "item.titanores.speed_upgrade": "Speed Upgrade",
+  "tooltip.titanores.speed_upgrades": "Speed upgrades: %s/%s (x%s speed)"
 }
