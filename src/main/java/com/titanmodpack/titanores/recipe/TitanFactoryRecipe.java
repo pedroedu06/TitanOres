@@ -78,6 +78,10 @@ public class TitanFactoryRecipe implements IRecipe<IInventory> {
         }
     }
 
+    public boolean isMirrored() {
+        return mirrored;
+    }
+
     public int getEnergy() {
         return energy;
     }

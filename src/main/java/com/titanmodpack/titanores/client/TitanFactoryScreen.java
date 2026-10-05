@@ -7,6 +7,7 @@ import com.titanmodpack.titanores.block.TitanFactoryTileEntity;
 import com.titanmodpack.titanores.container.TitanFactoryContainer;
 import com.titanmodpack.titanores.init.ModItems;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
+import net.minecraft.client.renderer.Rectangle2d;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -113,6 +114,11 @@ public class TitanFactoryScreen extends ContainerScreen<TitanFactoryContainer> {
             fill(matrixStack, sx + 1, sy + 1, sx + 17, sy + 17, 0xFF8B8B8B);
         }
         itemRenderer.renderGuiItem(new ItemStack(ModItems.SPEED_UPGRADE.get()), leftPos + ICON_X, topPos + ICON_Y);
+    }
+
+    // Screen area of the upgrade tab (JEI keeps its item list away from it).
+    public Rectangle2d getUpgradeTabArea() {
+        return new Rectangle2d(leftPos + TAB_X, topPos + TAB_Y, TAB_W, TAB_H);
     }
 
     // Clicks on the upgrade tab are inside the GUI (otherwise the held item would be dropped).

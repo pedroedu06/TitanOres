@@ -87,5 +87,10 @@
   "tooltip.titanores.energy": "%s / %s FE",
   "tooltip.titanores.progress": "Progress: %s%%",
   "item.titanores.speed_upgrade": "Speed Upgrade",
-  "tooltip.titanores.speed_upgrades": "Speed upgrades: %s/%s (x%s speed)"
+  "tooltip.titanores.speed_upgrades": "Speed upgrades: %s/%s (x%s speed)",
+  "jei.titanores.titan_factory": "Titan Factory",
+  "jei.titanores.titan_factory.info": "%s FE · %ss",
+  "jei.titanores.titan_factory.energy": "Energy needed: %s FE",
+  "jei.titanores.titan_factory.time": "Time: %ss (%s FE/t)",
+  "jei.titanores.titan_factory.mirrored": "The two columns can be swapped"
 }

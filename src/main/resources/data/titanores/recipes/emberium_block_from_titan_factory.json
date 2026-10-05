@@ -1,0 +1,17 @@
+{
+  "type": "titanores:titan_factory",
+  "left": [
+    {"item": "titanores:emberite_block"},
+    {"item": "titanores:emberite_block"},
+    {"item": "titanores:emberite_block"}
+  ],
+  "right": [
+    {"item": "titanores:titanium_block"},
+    {"item": "titanores:titanium_block"},
+    {"item": "titanores:titanium_block"}
+  ],
+  "mirrored": true,
+  "energy": 80000000,
+  "time": 2400,
+  "result": {"item": "titanores:emberium_block", "count": 3}
+}

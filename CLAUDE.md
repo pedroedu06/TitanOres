@@ -42,11 +42,13 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   consumption (energy/time per tick, pauses without power), items in from TOP (column-aware `TopInput`) and out from
   BOTTOM. Recipe type `titanores:titan_factory` (`left`/`right` columns of 3, `mirrored`, `energy`, `time`, `result`).
   Speed upgrades: item `speed_upgrade`, ONE slot (holds up to 4) in a tab on the RIGHT of the GUI next to the energy bar (separate handler, NBT "Upgrades", no automation access); each halves the time, total energy unchanged.
-  Recipes: Emberium (3 emberite + 3 titanium ingots -> 3 emberium, 40M FE, 60 s); Speed Upgrade (each column clock / swiftness potion via `forge:nbt` / solarite ingot -> 1, 800k FE, 10 s; mixed columns, so top automation cannot build it). User will define ~5 more recipes.
+  Recipes: Emberium (3 emberite + 3 titanium ingots -> 3 emberium, 40M FE, 60 s); Emberium Block (3 emberite + 3 titanium blocks -> 3 emberium blocks, 80M FE, 120 s); Speed Upgrade (each column clock / swiftness potion via `forge:nbt` / solarite ingot -> 1, 800k FE, 10 s; mixed columns, so top automation cannot build it). User will define ~5 more recipes.
   Machine crafting recipe (`recipes/titan_factory.json`, shaped): `IVI / GMG / SGS` = emberite ingot, glass
   (`forge:glass/colorless`), iron gear (`forge:gears/iron`), machine block (tag `titanores:machine_blocks`, optional
   entries: mekanism steel casing, thermal machine frame, etc. — modpacks extend it by datapack), solarite ingot.
-- Pending: JEI category for the Titan Factory recipes.
+- JEI: `compat/jei/` (`@JeiPlugin`, only loaded by JEI): Titan Factory category using the machine GUI crop, looping
+  animation (progress fills, energy bar statically shows only the recipe energy), click areas on the GUI arrows,
+  "+" transfer handler (slots 0-5), upgrade tab registered as a JEI extra area.
 - Pending (after the machine): ore **tooltips** showing where to find them (dimension, biome, Y range, pickaxe);
   details to be defined with the user.
 
