@@ -1,6 +1,7 @@
 package com.titanmodpack.titanores;
 
 import com.titanmodpack.titanores.client.ModKeyBindings;
+import com.titanmodpack.titanores.client.TitanCrafterScreen;
 import com.titanmodpack.titanores.client.TitanFactoryScreen;
 import com.titanmodpack.titanores.init.ModContainers;
 import net.minecraft.client.gui.ScreenManager;
@@ -68,6 +69,9 @@ public class TitanOres {
     private void clientSetup(final FMLClientSetupEvent event) {
         LOGGER.info("Titan Ores client setup");
         ModKeyBindings.register();
-        event.enqueueWork(() -> ScreenManager.register(ModContainers.TITAN_FACTORY.get(), TitanFactoryScreen::new));
+        event.enqueueWork(() -> {
+            ScreenManager.register(ModContainers.TITAN_FACTORY.get(), TitanFactoryScreen::new);
+            ScreenManager.register(ModContainers.TITAN_CRAFTER.get(), TitanCrafterScreen::new);
+        });
     }
 }

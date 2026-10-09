@@ -1,0 +1,32 @@
+{
+  "type": "titanores:titan_factory",
+  "left": [
+    {
+      "item": "minecraft:crafting_table"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "tag": "forge:gears/iron"
+    }
+  ],
+  "right": [
+    {
+      "item": "minecraft:crafting_table"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "tag": "forge:gears/iron"
+    }
+  ],
+  "mirrored": true,
+  "energy": 80000000,
+  "time": 4800,
+  "result": {
+    "item": "titanores:titan_crafter",
+    "count": 1
+  }
+}

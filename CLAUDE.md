@@ -37,7 +37,7 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
 ## Current state (see memory files for full numbers)
 - Done: Solarite / Emberite / Titanium ores, all 4 tool tiers (incl. Titanium Star), all 4 armor tiers, special
   items (heart, apple, carrot, lantern, magnet, star), Emberium alloy (made in the Titan Factory), Titan Factory
-  block + GUI + energy + processing.
+  block + GUI + energy + processing, Titan Crafter (second machine).
 - Titan Factory (name will change): 100M FE buffer (`energy/ModEnergyStorage`, receive-only, all sides), gradual
   consumption (energy/time per tick, pauses without power), items in from TOP (column-aware `TopInput`) and out from
   BOTTOM. Recipe type `titanores:titan_factory` (`left`/`right` columns of 3, `mirrored`, `energy`, `time`, `result`).
@@ -46,9 +46,17 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   Machine crafting recipe (`recipes/titan_factory.json`, shaped): `IVI / GMG / SGS` = emberite ingot, glass
   (`forge:glass/colorless`), iron gear (`forge:gears/iron`), machine block (tag `titanores:machine_blocks`, optional
   entries: mekanism steel casing, thermal machine frame, etc. — modpacks extend it by datapack), solarite ingot.
+- Titan Crafter (`titan_crafter`): 9x6 grid (slots 0-53 row by row, 54 output), 200M FE buffer, same tick logic as the
+  factory, no upgrades. Recipe type `titanores:titan_crafting` = FIXED 9x6 pattern (6 rows x 9 chars, space = empty,
+  no offset/mirror). Top input is "template" style (`TitanCrafterItemHandlers.TopInput`: only tops up slots already
+  holding the item); bottom = output. GUI `textures/gui/titan_crafter_gui.png` (240x222). Made in the factory:
+  2 crafting tables + 2 iron blocks + 2 `forge:gears/iron`, 80M FE, 240 s.
+  TODO: switch those gears to `forge:gears/diamond` when the modpack (AllTheOres) is ready; final recipes wait for the
+  modpack mod list + special items the user will create first. Crafter tested and working in game (no recipes yet).
 - JEI: `compat/jei/` (`@JeiPlugin`, only loaded by JEI): Titan Factory category using the machine GUI crop, looping
   animation (progress fills, energy bar statically shows only the recipe energy), click areas on the GUI arrows,
-  "+" transfer handler (slots 0-5), upgrade tab registered as a JEI extra area.
+  "+" transfer handler (slots 0-5), upgrade tab registered as a JEI extra area. JEI 7.7.1 recipe windows are FIXED at
+  198 px wide, so the Titan Crafter category uses a compact custom layout (180 px) instead of its 240 px GUI.
 - Pending (after the machine): ore **tooltips** showing where to find them (dimension, biome, Y range, pickaxe);
   details to be defined with the user.
 

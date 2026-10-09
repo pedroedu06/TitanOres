@@ -1,6 +1,7 @@
 package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.recipe.TitanCrafterRecipe;
 import com.titanmodpack.titanores.recipe.TitanFactoryRecipe;
 import com.titanmodpack.titanores.recipe.UpgradeShapedRecipe;
 import net.minecraft.item.crafting.IRecipeSerializer;
@@ -20,4 +21,10 @@ public class ModRecipes {
 
     public static final RegistryObject<TitanFactoryRecipe.Serializer> TITAN_FACTORY_SERIALIZER =
             SERIALIZERS.register("titan_factory", TitanFactoryRecipe.Serializer::new);
+
+    // Titan Crafter machine recipes ("type": "titanores:titan_crafting", fixed 9x6 pattern).
+    public static final IRecipeType<TitanCrafterRecipe> TITAN_CRAFTING_TYPE = IRecipeType.register(TitanOres.MOD_ID + ":titan_crafting");
+
+    public static final RegistryObject<TitanCrafterRecipe.Serializer> TITAN_CRAFTING_SERIALIZER =
+            SERIALIZERS.register("titan_crafting", TitanCrafterRecipe.Serializer::new);
 }

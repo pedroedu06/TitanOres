@@ -92,5 +92,8 @@
   "jei.titanores.titan_factory.info": "%s FE · %ss",
   "jei.titanores.titan_factory.energy": "Energy needed: %s FE",
   "jei.titanores.titan_factory.time": "Time: %ss (%s FE/t)",
-  "jei.titanores.titan_factory.mirrored": "The two columns can be swapped"
+  "jei.titanores.titan_factory.mirrored": "The two columns can be swapped",
+  "block.titanores.titan_crafter": "Titan Crafter",
+  "container.titanores.titan_crafter": "Titan Crafter",
+  "jei.titanores.titan_crafter": "Titan Crafter"
 }

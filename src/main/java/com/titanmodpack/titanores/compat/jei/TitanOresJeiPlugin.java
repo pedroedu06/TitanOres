@@ -1,8 +1,11 @@
 package com.titanmodpack.titanores.compat.jei;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.block.TitanCrafterTileEntity;
 import com.titanmodpack.titanores.block.TitanFactoryTileEntity;
+import com.titanmodpack.titanores.client.TitanCrafterScreen;
 import com.titanmodpack.titanores.client.TitanFactoryScreen;
+import com.titanmodpack.titanores.container.TitanCrafterContainer;
 import com.titanmodpack.titanores.container.TitanFactoryContainer;
 import com.titanmodpack.titanores.init.ModItems;
 import com.titanmodpack.titanores.init.ModRecipes;
@@ -17,6 +20,7 @@ import mezz.jei.api.registration.IRecipeTransferRegistration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Rectangle2d;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.RecipeManager;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.Collections;
@@ -36,17 +40,20 @@ public class TitanOresJeiPlugin implements IModPlugin {
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new TitanFactoryCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new TitanCrafterCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        registration.addRecipes(Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager()
-                .getAllRecipesFor(ModRecipes.TITAN_FACTORY_TYPE), TitanFactoryCategory.UID);
+        RecipeManager recipes = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
+        registration.addRecipes(recipes.getAllRecipesFor(ModRecipes.TITAN_FACTORY_TYPE), TitanFactoryCategory.UID);
+        registration.addRecipes(recipes.getAllRecipesFor(ModRecipes.TITAN_CRAFTING_TYPE), TitanCrafterCategory.UID);
     }
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ModItems.TITAN_FACTORY.get()), TitanFactoryCategory.UID);
+        registration.addRecipeCatalyst(new ItemStack(ModItems.TITAN_CRAFTER.get()), TitanCrafterCategory.UID);
     }
 
     @Override
@@ -54,6 +61,8 @@ public class TitanOresJeiPlugin implements IModPlugin {
         // Clicking either arrow of the machine GUI opens its recipes.
         registration.addRecipeClickArea(TitanFactoryScreen.class, 34, 35, 22, 14, TitanFactoryCategory.UID);
         registration.addRecipeClickArea(TitanFactoryScreen.class, 97, 35, 22, 14, TitanFactoryCategory.UID);
+        registration.addRecipeClickArea(TitanCrafterScreen.class, TitanCrafterScreen.ARROW_X, TitanCrafterScreen.ARROW_Y,
+                TitanCrafterScreen.ARROW_W, TitanCrafterScreen.ARROW_H, TitanCrafterCategory.UID);
         registration.addGuiContainerHandler(TitanFactoryScreen.class, new IGuiContainerHandler<TitanFactoryScreen>() {
             @Override
             public List<Rectangle2d> getGuiExtraAreas(TitanFactoryScreen screen) {
@@ -68,5 +77,8 @@ public class TitanOresJeiPlugin implements IModPlugin {
         int playerStart = TitanFactoryTileEntity.SLOT_COUNT + TitanFactoryTileEntity.UPGRADE_SLOTS;
         registration.addRecipeTransferHandler(TitanFactoryContainer.class, TitanFactoryCategory.UID,
                 0, TitanFactoryTileEntity.INPUT_SLOTS, playerStart, 36);
+        // Titan Crafter: grid slots 0-53, then the output slot, then the player inventory.
+        registration.addRecipeTransferHandler(TitanCrafterContainer.class, TitanCrafterCategory.UID,
+                0, TitanCrafterTileEntity.GRID_SLOTS, TitanCrafterTileEntity.SLOT_COUNT, 36);
     }
 }

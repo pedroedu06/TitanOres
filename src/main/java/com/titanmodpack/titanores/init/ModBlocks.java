@@ -4,6 +4,7 @@ import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.block.ManualMiningOreBlock;
 import com.titanmodpack.titanores.block.SolariteLanternBlock;
 import com.titanmodpack.titanores.block.SolariteLightBlock;
+import com.titanmodpack.titanores.block.TitanCrafterBlock;
 import com.titanmodpack.titanores.block.TitanFactoryBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -95,6 +96,15 @@ public class ModBlocks {
     // Machine (energy and recipes come later).
     public static final RegistryObject<Block> TITAN_FACTORY = BLOCKS.register("titan_factory",
             () -> new TitanFactoryBlock(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(3.5F)
+                    .sound(SoundType.METAL)
+                    .harvestTool(ToolType.PICKAXE)
+                    .harvestLevel(1)
+                    .requiresCorrectToolForDrops()));
+
+    // Second machine: 9x6 shaped crafting with energy (final crafts).
+    public static final RegistryObject<Block> TITAN_CRAFTER = BLOCKS.register("titan_crafter",
+            () -> new TitanCrafterBlock(AbstractBlock.Properties.of(Material.METAL)
                     .strength(3.5F)
                     .sound(SoundType.METAL)
                     .harvestTool(ToolType.PICKAXE)

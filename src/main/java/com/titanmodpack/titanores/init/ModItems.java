@@ -190,6 +190,7 @@ public class ModItems {
     public static final RegistryObject<Item> SOLARITE_LANTERN = ITEMS.register("solarite_lantern", () -> blockItem(ModBlocks.SOLARITE_LANTERN.get()));
 
     public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
+    public static final RegistryObject<Item> TITAN_CRAFTER = ITEMS.register("titan_crafter", () -> blockItem(ModBlocks.TITAN_CRAFTER.get()));
 
     // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
     public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);

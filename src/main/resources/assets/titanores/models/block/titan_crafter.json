@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "titanores:block/titan_crafter/titan_crafter_sides",
+    "north": "titanores:block/titan_crafter/titan_crafter_front",
+    "south": "titanores:block/titan_crafter/titan_crafter_sides",
+    "east": "titanores:block/titan_crafter/titan_crafter_sides",
+    "west": "titanores:block/titan_crafter/titan_crafter_sides",
+    "up": "titanores:block/titan_crafter/titan_crafter_top",
+    "down": "titanores:block/titan_crafter/titan_crafter_bottom"
+  }
+}
