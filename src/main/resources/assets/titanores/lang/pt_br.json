@@ -95,5 +95,13 @@
   "jei.titanores.titan_factory.mirrored": "As duas colunas podem ser trocadas",
   "block.titanores.titan_crafter": "Titan Crafter",
   "container.titanores.titan_crafter": "Titan Crafter",
-  "jei.titanores.titan_crafter": "Titan Crafter"
+  "jei.titanores.titan_crafter": "Titan Crafter",
+  "item.titanores.source_crystal": "Cristal da Fonte",
+  "item.titanores.sponge_bob": "Bob Esponja",
+  "tooltip.titanores.solarite.where": "Overworld: biomas de Oceano Profundo",
+  "tooltip.titanores.solarite.height": "Y 0 a 16",
+  "tooltip.titanores.emberite.where": "Nether: Floresta Distorcida",
+  "tooltip.titanores.emberite.height": "Y 95 a 125",
+  "tooltip.titanores.titanium.where": "End: Planaltos do End",
+  "tooltip.titanores.titanium.height": "Y 16 a 56"
 }

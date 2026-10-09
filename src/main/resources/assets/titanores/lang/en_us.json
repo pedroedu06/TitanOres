@@ -95,5 +95,13 @@
   "jei.titanores.titan_factory.mirrored": "The two columns can be swapped",
   "block.titanores.titan_crafter": "Titan Crafter",
   "container.titanores.titan_crafter": "Titan Crafter",
-  "jei.titanores.titan_crafter": "Titan Crafter"
+  "jei.titanores.titan_crafter": "Titan Crafter",
+  "item.titanores.source_crystal": "Source Crystal",
+  "item.titanores.sponge_bob": "Sponge Bob",
+  "tooltip.titanores.solarite.where": "Overworld: Deep Ocean biomes",
+  "tooltip.titanores.solarite.height": "Y 0 to 16",
+  "tooltip.titanores.emberite.where": "Nether: Warped Forest",
+  "tooltip.titanores.emberite.height": "Y 95 to 125",
+  "tooltip.titanores.titanium.where": "End: End Highlands",
+  "tooltip.titanores.titanium.height": "Y 16 to 56"
 }

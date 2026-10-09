@@ -25,6 +25,7 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   worn armor `textures/models/armor/<material>_layer_1|2.png`, GUI `textures/gui/`. No spaces/uppercase in names.
 - Item models of blocks use parent `titanores:block/<id>` (no subfolder); only textures use subfolders.
 - Every item is fire resistant (`ModItems.props()`).
+- Exception to the per-material folders: the modpack's FINAL items use `textures/item/finalitens/` (user's choice).
 - After adding assets, verify all model/texture references exist (small Python check) before building.
 - Plan mode is used often: write the plan, wait for approval, then implement.
 
@@ -57,8 +58,12 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   animation (progress fills, energy bar statically shows only the recipe energy), click areas on the GUI arrows,
   "+" transfer handler (slots 0-5), upgrade tab registered as a JEI extra area. JEI 7.7.1 recipe windows are FIXED at
   198 px wide, so the Titan Crafter category uses a compact custom layout (180 px) instead of its 240 px GUI.
-- Pending (after the machine): ore **tooltips** showing where to find them (dimension, biome, Y range, pickaxe);
-  details to be defined with the user.
+- Final items (~10 planned, user still designing them): endgame components for the modpack, NO recipes in the mod
+  (the modpack adds them with KubeJS). All final items follow the Source Crystal style (epic rarity, no glow,
+  no tooltip, no code comments). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack).
+- Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
+  left to Waila/Jade, user's choice);
+  keep them in sync with `world/ModOreGeneration` and the tiers.
 
 ## Documentation (separate repo — keep it updated after EVERY change)
 - `D:\projetos\Mods\TitanOres_doc` — Material for MkDocs, GitHub Pages.

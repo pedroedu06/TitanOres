@@ -3,6 +3,7 @@ package com.titanmodpack.titanores.init;
 import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.item.GlowingItem;
 import com.titanmodpack.titanores.item.ModItemTier;
+import com.titanmodpack.titanores.item.OreBlockItem;
 import com.titanmodpack.titanores.item.SolariteMagnetItem;
 import com.titanmodpack.titanores.item.TitaniumAxeItem;
 import com.titanmodpack.titanores.item.TitaniumHeartItem;
@@ -39,7 +40,8 @@ public class ModItems {
     public static final RegistryObject<Item> SOLARITE_DUST = ITEMS.register("solarite_dust", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_STICK = ITEMS.register("solarite_stick", ModItems::simpleItem);
 
-    public static final RegistryObject<Item> SOLARITE_ORE = ITEMS.register("solarite_ore", () -> blockItem(ModBlocks.SOLARITE_ORE.get()));
+    public static final RegistryObject<Item> SOLARITE_ORE = ITEMS.register("solarite_ore",
+            () -> new OreBlockItem(ModBlocks.SOLARITE_ORE.get(), props(), "solarite"));
     public static final RegistryObject<Item> SOLARITE_BLOCK = ITEMS.register("solarite_block", () -> blockItem(ModBlocks.SOLARITE_BLOCK.get()));
 
     // Solarite tools. Final damage = 1 (base) + 5 (tier) + modifier: sword 25, axe 27.
@@ -69,7 +71,8 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_NUGGET = ITEMS.register("emberite_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_DUST = ITEMS.register("emberite_dust", ModItems::simpleItem);
 
-    public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore", () -> blockItem(ModBlocks.EMBERITE_ORE.get()));
+    public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore",
+            () -> new OreBlockItem(ModBlocks.EMBERITE_ORE.get(), props(), "emberite"));
     public static final RegistryObject<Item> EMBERITE_BLOCK = ITEMS.register("emberite_block", () -> blockItem(ModBlocks.EMBERITE_BLOCK.get()));
 
     // Emberite tools: smithing table upgrade of the solarite tools (keeps enchantments).
@@ -100,7 +103,8 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", ModItems::simpleItem);
 
-    public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore", () -> blockItem(ModBlocks.TITANIUM_ORE.get()));
+    public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore",
+            () -> new OreBlockItem(ModBlocks.TITANIUM_ORE.get(), props(), "titanium"));
     public static final RegistryObject<Item> TITANIUM_BLOCK = ITEMS.register("titanium_block", () -> blockItem(ModBlocks.TITANIUM_BLOCK.get()));
 
     // Titanium tools: smithing table upgrade of the emberite tools. Unbreakable, with special abilities.
@@ -191,6 +195,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
     public static final RegistryObject<Item> TITAN_CRAFTER = ITEMS.register("titan_crafter", () -> blockItem(ModBlocks.TITAN_CRAFTER.get()));
+
+    // Final items (modpack endgame components; their recipes come from KubeJS in the modpack).
+    // Textures live in textures/item/finalitens/.
+    public static final RegistryObject<Item> SOURCE_CRYSTAL = ITEMS.register("source_crystal",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> SPONGE_BOB = ITEMS.register("sponge_bob",
+            () -> new Item(props().rarity(Rarity.EPIC)));
 
     // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
     public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);
