@@ -103,5 +103,7 @@
   "tooltip.titanores.emberite.where": "Nether: Floresta Distorcida",
   "tooltip.titanores.emberite.height": "Y 95 a 125",
   "tooltip.titanores.titanium.where": "End: Planaltos do End",
-  "tooltip.titanores.titanium.height": "Y 16 a 56"
+  "tooltip.titanores.titanium.height": "Y 16 a 56",
+  "item.titanores.ancestral_seed": "Semente Ancestral",
+  "item.titanores.world_core": "Núcleo do Mundo"
 }

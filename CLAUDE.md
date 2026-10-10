@@ -60,7 +60,8 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   198 px wide, so the Titan Crafter category uses a compact custom layout (180 px) instead of its 240 px GUI.
 - Final items (~10 planned, user still designing them): endgame components for the modpack, NO recipes in the mod
   (the modpack adds them with KubeJS). All final items follow the Source Crystal style (epic rarity, no glow,
-  no tooltip, no code comments). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack).
+  no tooltip, no code comments). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
+  `ancestral_seed`, `world_core`. Pending: `raid_king.png` (crown) — texture exists, NOT registered, planned separately.
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.

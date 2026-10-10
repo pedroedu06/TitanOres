@@ -202,6 +202,10 @@ public class ModItems {
             () -> new Item(props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> SPONGE_BOB = ITEMS.register("sponge_bob",
             () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> ANCESTRAL_SEED = ITEMS.register("ancestral_seed",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> WORLD_CORE = ITEMS.register("world_core",
+            () -> new Item(props().rarity(Rarity.EPIC)));
 
     // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
     public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);

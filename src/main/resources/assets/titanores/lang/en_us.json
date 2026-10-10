@@ -103,5 +103,7 @@
   "tooltip.titanores.emberite.where": "Nether: Warped Forest",
   "tooltip.titanores.emberite.height": "Y 95 to 125",
   "tooltip.titanores.titanium.where": "End: End Highlands",
-  "tooltip.titanores.titanium.height": "Y 16 to 56"
+  "tooltip.titanores.titanium.height": "Y 16 to 56",
+  "item.titanores.ancestral_seed": "Ancestral Seed",
+  "item.titanores.world_core": "World Core"
 }
