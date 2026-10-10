@@ -61,7 +61,11 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
 - Final items (~10 planned, user still designing them): endgame components for the modpack, NO recipes in the mod
   (the modpack adds them with KubeJS). All final items follow the Source Crystal style (epic rarity, no glow,
   no tooltip, no code comments). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
-  `ancestral_seed`, `world_core`. Pending: `raid_king.png` (crown) — texture exists, NOT registered, planned separately.
+  `ancestral_seed`, `world_core`. `raid_king` (crown): `item/RaidKingItem` (HEAD equipment slot, no armor, NBT `HeroLevel`) +
+  `event/RaidKingEvents`: drops where the last raider dies once a raid with `getBadOmenLevel() >= getMaxBadOmenLevel()`
+  turns `isVictory()` (pending map per world, checked on WorldTick); worn on head or Curios `head` slot -> Hero of the
+  Village amplifier HeroLevel-1 renewed every 20 ticks. NOTE: in LivingDeathEvent the raider already left its raid
+  (die() calls removeFromRaid first), so the raid is found with `getRaidAt(pos)`. Tested OK in game.
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.

@@ -4,6 +4,7 @@ import com.titanmodpack.titanores.TitanOres;
 import com.titanmodpack.titanores.item.GlowingItem;
 import com.titanmodpack.titanores.item.ModItemTier;
 import com.titanmodpack.titanores.item.OreBlockItem;
+import com.titanmodpack.titanores.item.RaidKingItem;
 import com.titanmodpack.titanores.item.SolariteMagnetItem;
 import com.titanmodpack.titanores.item.TitaniumAxeItem;
 import com.titanmodpack.titanores.item.TitaniumHeartItem;
@@ -206,6 +207,8 @@ public class ModItems {
             () -> new Item(props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> WORLD_CORE = ITEMS.register("world_core",
             () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> RAID_KING = ITEMS.register("raid_king",
+            () -> new RaidKingItem(props().rarity(Rarity.EPIC).stacksTo(1)));
 
     // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
     public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);
