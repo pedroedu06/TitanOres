@@ -106,5 +106,10 @@
   "tooltip.titanores.titanium.height": "Y 16 a 56",
   "item.titanores.ancestral_seed": "Semente Ancestral",
   "item.titanores.world_core": "Núcleo do Mundo",
-  "item.titanores.raid_king": "Rei das Raids"
+  "item.titanores.raid_king": "Rei das Raids",
+  "item.titanores.antenna": "Antena",
+  "item.titanores.calculator": "Calculadora",
+  "item.titanores.iron_man_mask": "Máscara do Homem de Ferro",
+  "item.titanores.music_disc_titanium": "Disco de Música de Titânio",
+  "item.titanores.universal_remote": "Controle Universal"
 }

@@ -47,25 +47,29 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   Machine crafting recipe (`recipes/titan_factory.json`, shaped): `IVI / GMG / SGS` = emberite ingot, glass
   (`forge:glass/colorless`), iron gear (`forge:gears/iron`), machine block (tag `titanores:machine_blocks`, optional
   entries: mekanism steel casing, thermal machine frame, etc. — modpacks extend it by datapack), solarite ingot.
-- Titan Crafter (`titan_crafter`): 9x6 grid (slots 0-53 row by row, 54 output), 200M FE buffer, same tick logic as the
-  factory, no upgrades. Recipe type `titanores:titan_crafting` = FIXED 9x6 pattern (6 rows x 9 chars, space = empty,
+- Titan Crafter (`titan_crafter`): 9x7 grid (slots 0-62 row by row, 63 output; was 9x6 — user wanted an odd height for symmetric
+  recipes; old 55-slot saves are migrated in `loadItems`), 200M FE buffer, same tick logic as the
+  factory, no upgrades. Recipe type `titanores:titan_crafting` = FIXED 9x7 pattern (7 rows x 9 chars, space = empty,
   no offset/mirror). Top input is "template" style (`TitanCrafterItemHandlers.TopInput`: only tops up slots already
-  holding the item); bottom = output. GUI `textures/gui/titan_crafter_gui.png` (240x222). Made in the factory:
+  holding the item); bottom = output. GUI `textures/gui/titan_crafter_gui.png` (240x240). Made in the factory:
   2 crafting tables + 2 iron blocks + 2 `forge:gears/iron`, 80M FE, 240 s.
   TODO: switch those gears to `forge:gears/diamond` when the modpack (AllTheOres) is ready; final recipes wait for the
-  modpack mod list + special items the user will create first. Crafter tested and working in game (no recipes yet).
+  modpack mod list + special items. Crafter tested OK. Recipes: Titanium Music Disc (36 titanium ingots in a
+  diamond shape + `#minecraft:music_discs` in the center, 36M FE, 60 s).
 - JEI: `compat/jei/` (`@JeiPlugin`, only loaded by JEI): Titan Factory category using the machine GUI crop, looping
   animation (progress fills, energy bar statically shows only the recipe energy), click areas on the GUI arrows,
   "+" transfer handler (slots 0-5), upgrade tab registered as a JEI extra area. JEI 7.7.1 recipe windows are FIXED at
   198 px wide, so the Titan Crafter category uses a compact custom layout (180 px) instead of its 240 px GUI.
-- Final items (~10 planned, user still designing them): endgame components for the modpack, NO recipes in the mod
-  (the modpack adds them with KubeJS). All final items follow the Source Crystal style (epic rarity, no glow,
-  no tooltip, no code comments). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
+- Final items (10, all created): endgame components for the modpack. RECIPE RULE (user): recipes using only
+  vanilla + this mod's items go IN THE MOD (JSON); KubeJS in the modpack only for recipes needing other mods' items. All final items follow the Source Crystal style (epic rarity, no glow,
+  no tooltip, no code comments). Docs: own page `docs/final-items.md` (table + one section per item). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
   `ancestral_seed`, `world_core`. `raid_king` (crown): `item/RaidKingItem` (HEAD equipment slot, no armor, NBT `HeroLevel`) +
   `event/RaidKingEvents`: drops where the last raider dies once a raid with `getBadOmenLevel() >= getMaxBadOmenLevel()`
   turns `isVictory()` (pending map per world, checked on WorldTick); worn on head or Curios `head` slot -> Hero of the
   Village amplifier HeroLevel-1 renewed every 20 ticks. NOTE: in LivingDeathEvent the raider already left its raid
   (die() calls removeFromRaid first), so the raid is found with `getRaidAt(pos)`. Tested OK in game.
+  Plain final items added 2026-10-15: `antenna`, `calculator`, `iron_man_mask`, `music_disc_titanium`, `universal_remote`
+  (10 of 10 — all final items exist; only recipes remain).
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.

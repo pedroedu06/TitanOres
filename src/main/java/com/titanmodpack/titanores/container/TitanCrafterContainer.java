@@ -20,15 +20,15 @@ import net.minecraftforge.items.SlotItemHandler;
 
 import javax.annotation.Nonnull;
 
-// Slot positions match textures/gui/titan_crafter_gui.png (240x222).
+// Slot positions match textures/gui/titan_crafter_gui.png (240x240).
 public class TitanCrafterContainer extends Container {
     public static final int GRID_X = 8;
     public static final int GRID_Y = 18;
     public static final int OUTPUT_X = 197;
     public static final int OUTPUT_Y = 54;
     public static final int PLAYER_X = 8;
-    public static final int PLAYER_Y = 140;
-    public static final int HOTBAR_Y = 198;
+    public static final int PLAYER_Y = 158;
+    public static final int HOTBAR_Y = 216;
     private static final int MACHINE_SLOTS = TitanCrafterTileEntity.SLOT_COUNT;
 
     private final IWorldPosCallable access;

@@ -35,7 +35,7 @@ import net.minecraftforge.items.wrapper.RecipeWrapper;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-// Titan Crafter: 9x6 crafting grid (slots 0-53, row by row), 1 output slot (54) and a 200M FE buffer.
+// Titan Crafter: 9x7 crafting grid (slots 0-62, row by row), 1 output slot (63) and a 200M FE buffer.
 // Energy enters from every side; items enter from the top (template style) and leave from the bottom.
 // Each tick it spends recipe.energy / recipe.time FE; without enough energy it pauses (progress is kept).
 public class TitanCrafterTileEntity extends TileEntity implements INamedContainerProvider, ITickableTileEntity {
@@ -193,10 +193,27 @@ public class TitanCrafterTileEntity extends TileEntity implements INamedContaine
     @Override
     public void load(BlockState state, CompoundNBT nbt) {
         super.load(state, nbt);
-        items.deserializeNBT(nbt.getCompound("Inventory"));
+        loadItems(nbt.getCompound("Inventory"));
         energy.setEnergy(nbt.getInt("Energy"));
         progress = nbt.getInt("Progress");
         recipeDirty = true;
+    }
+
+    // Reads into a temporary handler so saves from the old 9x6 layout (55 slots: grid 0-53, output 54) still load:
+    // the grid width did not change, so grid slots keep their index and the old output moves to the new output slot.
+    private void loadItems(CompoundNBT tag) {
+        ItemStackHandler saved = new ItemStackHandler();
+        saved.deserializeNBT(tag);
+        int savedGrid = saved.getSlots() - 1;
+        for (int i = 0; i < SLOT_COUNT; i++) {
+            items.setStackInSlot(i, ItemStack.EMPTY);
+        }
+        for (int i = 0; i < Math.min(savedGrid, GRID_SLOTS); i++) {
+            items.setStackInSlot(i, saved.getStackInSlot(i));
+        }
+        if (savedGrid >= 0) {
+            items.setStackInSlot(OUTPUT_SLOT, saved.getStackInSlot(savedGrid));
+        }
     }
 
     @Nonnull

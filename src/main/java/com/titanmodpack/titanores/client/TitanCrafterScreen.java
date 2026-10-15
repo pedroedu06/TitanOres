@@ -17,7 +17,7 @@ public class TitanCrafterScreen extends ContainerScreen<TitanCrafterContainer> {
     public static final int ENERGY_X = 219;
     public static final int ENERGY_Y = 16;
     public static final int ENERGY_W = 15;
-    public static final int ENERGY_H = 108;
+    public static final int ENERGY_H = 126;
     // Progress bar drawn under the output slot.
     public static final int PROGRESS_X = 197;
     public static final int PROGRESS_Y = 73;
@@ -32,7 +32,7 @@ public class TitanCrafterScreen extends ContainerScreen<TitanCrafterContainer> {
     public TitanCrafterScreen(TitanCrafterContainer container, PlayerInventory playerInventory, ITextComponent title) {
         super(container, playerInventory, title);
         this.imageWidth = 240;
-        this.imageHeight = 222;
+        this.imageHeight = 240;
         this.titleLabelY = 6;
         this.inventoryLabelY = TitanCrafterContainer.PLAYER_Y - 11;
     }

@@ -1,0 +1,26 @@
+{
+  "type": "titanores:titan_crafting",
+  "pattern": [
+    "   TTT   ",
+    "  TTTTT  ",
+    " TTTTTTT ",
+    " TTTDTTT ",
+    " TTTTTTT ",
+    "  TTTTT  ",
+    "   TTT   "
+  ],
+  "key": {
+    "T": {
+      "item": "titanores:titanium_ingot"
+    },
+    "D": {
+      "tag": "minecraft:music_discs"
+    }
+  },
+  "energy": 36000000,
+  "time": 1200,
+  "result": {
+    "item": "titanores:music_disc_titanium",
+    "count": 1
+  }
+}

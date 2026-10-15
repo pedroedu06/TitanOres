@@ -23,12 +23,12 @@ import net.minecraftforge.registries.ForgeRegistryEntry;
 import java.util.HashMap;
 import java.util.Map;
 
-// Titan Crafter recipe: a fixed 9x6 shaped pattern. Pattern row r, column c is grid slot r * 9 + c; there is no
+// Titan Crafter recipe: a fixed 9x7 shaped pattern. Pattern row r, column c is grid slot r * 9 + c; there is no
 // offset or mirroring, and a space means that slot must be empty. Each used slot consumes 1 item.
 // The energy is spent gradually: energy / time per tick.
 public class TitanCrafterRecipe implements IRecipe<IInventory> {
     public static final int WIDTH = 9;
-    public static final int HEIGHT = 6;
+    public static final int HEIGHT = 7;
     public static final int SIZE = WIDTH * HEIGHT;
 
     private final ResourceLocation id;

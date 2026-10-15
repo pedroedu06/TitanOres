@@ -23,14 +23,14 @@ import java.util.Collections;
 import java.util.List;
 
 // JEI page for the Titan Crafter. JEI 7 recipe windows are fixed at 198 px wide, so the 240 px machine GUI does not
-// fit: the page uses a compact layout instead (9x6 grid, vertical energy bar beside it, arrow -> output below).
+// fit: the page uses a compact layout instead (9x7 grid, vertical energy bar beside it, arrow -> output below).
 // The energy bar statically shows only the recipe's energy (relative to the 200M buffer); progress loops.
 public class TitanCrafterCategory implements IRecipeCategory<TitanCrafterRecipe> {
     public static final ResourceLocation UID = new ResourceLocation(TitanOres.MOD_ID, "titan_crafting");
     private static final ResourceLocation TEXTURE = new ResourceLocation(TitanOres.MOD_ID, "textures/gui/titan_crafter_gui.png");
 
     private static final int WIDTH = 180;
-    private static final int HEIGHT = 150;
+    private static final int HEIGHT = 168;
     private static final int GRID_H = TitanCrafterRecipe.HEIGHT * 18;
 
     // Energy bar frame beside the grid (1 px black border, like the machine GUI).
@@ -43,9 +43,9 @@ public class TitanCrafterCategory implements IRecipeCategory<TitanCrafterRecipe>
 
     // Bottom row: arrow (from the GUI texture) -> output slot, progress bar under the output.
     private static final int ARROW_X = 50;
-    private static final int ARROW_Y = 117;
+    private static final int ARROW_Y = GRID_H + 9;
     private static final int OUTPUT_X = 80;
-    private static final int OUTPUT_Y = 115;
+    private static final int OUTPUT_Y = GRID_H + 7;
     private static final int PROGRESS_X = OUTPUT_X;
     private static final int PROGRESS_Y = OUTPUT_Y + 19;
     private static final int PROGRESS_W = 16;

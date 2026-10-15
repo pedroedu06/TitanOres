@@ -209,6 +209,16 @@ public class ModItems {
             () -> new Item(props().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> RAID_KING = ITEMS.register("raid_king",
             () -> new RaidKingItem(props().rarity(Rarity.EPIC).stacksTo(1)));
+    public static final RegistryObject<Item> ANTENNA = ITEMS.register("antenna",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> CALCULATOR = ITEMS.register("calculator",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> IRON_MAN_MASK = ITEMS.register("iron_man_mask",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> MUSIC_DISC_TITANIUM = ITEMS.register("music_disc_titanium",
+            () -> new Item(props().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> UNIVERSAL_REMOTE = ITEMS.register("universal_remote",
+            () -> new Item(props().rarity(Rarity.EPIC)));
 
     // Titan Factory upgrade: each one installed doubles the machine speed (see TitanFactoryTileEntity).
     public static final RegistryObject<Item> SPEED_UPGRADE = ITEMS.register("speed_upgrade", ModItems::simpleItem);
