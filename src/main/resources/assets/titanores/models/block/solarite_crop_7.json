@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "titanores:block/crop/solarite_crop_7"
+  }
+}

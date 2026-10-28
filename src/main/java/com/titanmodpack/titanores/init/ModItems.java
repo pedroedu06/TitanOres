@@ -18,6 +18,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import com.titanmodpack.titanores.item.ModArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
@@ -39,6 +40,9 @@ public class ModItems {
     public static final RegistryObject<Item> SOLARITE_INGOT = ITEMS.register("solarite_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_NUGGET = ITEMS.register("solarite_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_DUST = ITEMS.register("solarite_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> SOLARITE_SEED = ITEMS.register("solarite_seed",
+            () -> new BlockNamedItem(ModBlocks.SOLARITE_CROP.get(), props()));
+    public static final RegistryObject<Item> SOLARITE_ESSENCE = ITEMS.register("solarite_essence", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_STICK = ITEMS.register("solarite_stick", ModItems::simpleItem);
 
     public static final RegistryObject<Item> SOLARITE_ORE = ITEMS.register("solarite_ore",
@@ -71,6 +75,9 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_INGOT = ITEMS.register("emberite_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_NUGGET = ITEMS.register("emberite_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_DUST = ITEMS.register("emberite_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERITE_SEED = ITEMS.register("emberite_seed",
+            () -> new BlockNamedItem(ModBlocks.EMBERITE_CROP.get(), props()));
+    public static final RegistryObject<Item> EMBERITE_ESSENCE = ITEMS.register("emberite_essence", ModItems::simpleItem);
 
     public static final RegistryObject<Item> EMBERITE_ORE = ITEMS.register("emberite_ore",
             () -> new OreBlockItem(ModBlocks.EMBERITE_ORE.get(), props(), "emberite"));
@@ -103,6 +110,9 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> TITANIUM_SEED = ITEMS.register("titanium_seed",
+            () -> new BlockNamedItem(ModBlocks.TITANIUM_CROP.get(), props()));
+    public static final RegistryObject<Item> TITANIUM_ESSENCE = ITEMS.register("titanium_essence", ModItems::simpleItem);
 
     public static final RegistryObject<Item> TITANIUM_ORE = ITEMS.register("titanium_ore",
             () -> new OreBlockItem(ModBlocks.TITANIUM_ORE.get(), props(), "titanium"));
@@ -196,6 +206,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
     public static final RegistryObject<Item> TITAN_CRAFTER = ITEMS.register("titan_crafter", () -> blockItem(ModBlocks.TITAN_CRAFTER.get()));
+    public static final RegistryObject<Item> BLUE_SOIL = ITEMS.register("blue_soil", () -> blockItem(ModBlocks.BLUE_SOIL.get()));
 
     // Final items (modpack endgame components; their recipes come from KubeJS in the modpack).
     // Textures live in textures/item/finalitens/.

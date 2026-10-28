@@ -111,5 +111,15 @@
   "item.titanores.calculator": "Calculator",
   "item.titanores.iron_man_mask": "Iron Man Mask",
   "item.titanores.music_disc_titanium": "Titanium Music Disc",
-  "item.titanores.universal_remote": "Universal Remote"
+  "item.titanores.universal_remote": "Universal Remote",
+  "item.titanores.solarite_seed": "Solarite Seeds",
+  "item.titanores.solarite_essence": "Solarite Essence",
+  "item.titanores.emberite_seed": "Emberite Seeds",
+  "item.titanores.emberite_essence": "Emberite Essence",
+  "item.titanores.titanium_seed": "Titanium Seeds",
+  "item.titanores.titanium_essence": "Titanium Essence",
+  "block.titanores.blue_soil": "Blue Soil",
+  "block.titanores.solarite_crop": "Solarite Crop",
+  "block.titanores.emberite_crop": "Emberite Crop",
+  "block.titanores.titanium_crop": "Titanium Crop"
 }

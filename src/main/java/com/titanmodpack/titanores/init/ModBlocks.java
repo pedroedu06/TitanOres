@@ -1,6 +1,7 @@
 package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.block.EssenceCropBlock;
 import com.titanmodpack.titanores.block.ManualMiningOreBlock;
 import com.titanmodpack.titanores.block.SolariteLanternBlock;
 import com.titanmodpack.titanores.block.SolariteLightBlock;
@@ -110,4 +111,21 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)
                     .harvestLevel(1)
                     .requiresCorrectToolForDrops()));
+
+    // Farming: essence crops only grow on Blue Soil (its recipe comes from KubeJS in the modpack).
+    public static final RegistryObject<Block> BLUE_SOIL = BLOCKS.register("blue_soil",
+            () -> new Block(AbstractBlock.Properties.of(Material.DIRT)
+                    .strength(0.6F)
+                    .sound(SoundType.GRASS)
+                    .harvestTool(ToolType.SHOVEL)));
+    public static final RegistryObject<Block> SOLARITE_CROP = BLOCKS.register("solarite_crop",
+            () -> new EssenceCropBlock(cropProps(), () -> ModItems.SOLARITE_SEED.get()));
+    public static final RegistryObject<Block> EMBERITE_CROP = BLOCKS.register("emberite_crop",
+            () -> new EssenceCropBlock(cropProps(), () -> ModItems.EMBERITE_SEED.get()));
+    public static final RegistryObject<Block> TITANIUM_CROP = BLOCKS.register("titanium_crop",
+            () -> new EssenceCropBlock(cropProps(), () -> ModItems.TITANIUM_SEED.get()));
+
+    private static AbstractBlock.Properties cropProps() {
+        return AbstractBlock.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP);
+    }
 }

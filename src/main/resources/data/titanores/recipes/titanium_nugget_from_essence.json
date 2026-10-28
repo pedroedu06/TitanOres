@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "E E",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "titanores:titanium_essence"
+    }
+  },
+  "result": {
+    "item": "titanores:titanium_nugget",
+    "count": 1
+  }
+}

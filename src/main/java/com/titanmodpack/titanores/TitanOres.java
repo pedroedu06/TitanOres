@@ -5,6 +5,8 @@ import com.titanmodpack.titanores.client.TitanCrafterScreen;
 import com.titanmodpack.titanores.client.TitanFactoryScreen;
 import com.titanmodpack.titanores.init.ModContainers;
 import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import com.titanmodpack.titanores.compat.CuriosCompat;
 import com.titanmodpack.titanores.network.ModNetwork;
 import com.titanmodpack.titanores.init.ModBlocks;
@@ -72,6 +74,9 @@ public class TitanOres {
         event.enqueueWork(() -> {
             ScreenManager.register(ModContainers.TITAN_FACTORY.get(), TitanFactoryScreen::new);
             ScreenManager.register(ModContainers.TITAN_CRAFTER.get(), TitanCrafterScreen::new);
+            RenderTypeLookup.setRenderLayer(ModBlocks.SOLARITE_CROP.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.EMBERITE_CROP.get(), RenderType.cutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.TITANIUM_CROP.get(), RenderType.cutout());
         });
     }
 }

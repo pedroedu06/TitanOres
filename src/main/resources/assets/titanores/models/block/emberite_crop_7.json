@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "titanores:block/crop/emberite_crop_7"
+  }
+}

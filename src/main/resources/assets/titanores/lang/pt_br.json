@@ -111,5 +111,15 @@
   "item.titanores.calculator": "Calculadora",
   "item.titanores.iron_man_mask": "Máscara do Homem de Ferro",
   "item.titanores.music_disc_titanium": "Disco de Música de Titânio",
-  "item.titanores.universal_remote": "Controle Universal"
+  "item.titanores.universal_remote": "Controle Universal",
+  "item.titanores.solarite_seed": "Sementes de Solarite",
+  "item.titanores.solarite_essence": "Essência de Solarite",
+  "item.titanores.emberite_seed": "Sementes de Emberite",
+  "item.titanores.emberite_essence": "Essência de Emberite",
+  "item.titanores.titanium_seed": "Sementes de Titânio",
+  "item.titanores.titanium_essence": "Essência de Titânio",
+  "block.titanores.blue_soil": "Terra Azul",
+  "block.titanores.solarite_crop": "Plantação de Solarite",
+  "block.titanores.emberite_crop": "Plantação de Emberite",
+  "block.titanores.titanium_crop": "Plantação de Titânio"
 }

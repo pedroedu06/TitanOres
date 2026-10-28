@@ -70,6 +70,14 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   (die() calls removeFromRaid first), so the raid is found with `getRaidAt(pos)`. Tested OK in game.
   Plain final items added 2026-10-15: `antenna`, `calculator`, `iron_man_mask`, `music_disc_titanium`, `universal_remote`
   (10 of 10 — all final items exist; only recipes remain).
+- Farming (branch `feacture/seeds`): DONE parts 1+2. Items `<ore>_seed` (BlockNamedItem of `<ore>_crop`) and
+  `<ore>_essence` (tags `forge:seeds`, `titanores:essences`); `blue_soil` (cube_bottom_top, shovel; recipe via KubeJS in
+  the modpack). `block/EssenceCropBlock`: grows ONLY on blue_soil (overrides canSurvive; vanilla asks for farmland),
+  1-in-5 chance per random tick (slower than wheat); `event/CropEvents` cancels vanilla bone meal (other mods' growth
+  items/accelerators still work). Mature drop: 1 essence + 1 seed. 8 essences (ring) -> 1 nugget. Crop stage textures
+  (`textures/block/crop/`) are from Mystical Agriculture (MIT, credited in README + `resources/licenses/`), final
+  stage recolored per ore. NEXT (part 3): Mekanism 5x processing (clump/crystal/shard + hot/cold fluids, textures in
+  `textures/item/mekanism/`).
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.
