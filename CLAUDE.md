@@ -76,8 +76,13 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   1-in-5 chance per random tick (slower than wheat); `event/CropEvents` cancels vanilla bone meal (other mods' growth
   items/accelerators still work). Mature drop: 1 essence + 1 seed + 25% chance of an extra seed. 8 essences (ring) -> 1 nugget. Crop stage textures
   (`textures/block/crop/`) are from Mystical Agriculture (MIT, credited in README + `resources/licenses/`), final
-  stage recolored per ore. NEXT (part 3): Mekanism 5x processing (clump/crystal/shard + hot/cold fluids, textures in
-  `textures/item/mekanism/`).
+  stage recolored per ore. Part 3 DONE: ore processing. Items `<ore>_dirty_dust/_clump/_shard/_crystal`
+  (textures `textures/item/mekanism/`, Mekanism tags `mekanism:<kind>s/<ore>`); slurries `titanores:dirty_<ore>` /
+  `clean_<ore>` in `compat/mekanism/MekanismCompat` (only registered if Mekanism is loaded; clean uses
+  `fluid/cold_<ore>_still`, dirty is a darkened copy). Recipes in `recipes/processing/<ore>/` with `forge:mod_loaded`
+  conditions: Mekanism 2x-5x chain (copied from Mekanism's iron), 2x dust in IE crusher, Create crushing+milling,
+  Occultism crushing, Blood Magic ARC; dust -> ingot smelting/blasting. No Thermal (pack has no Thermal Expansion).
+  NEXT: `fluid/hot_<ore>_*` = Tinkers molten metal (ask what the "cold" liquid means there); Botany Pots via KubeJS.
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.

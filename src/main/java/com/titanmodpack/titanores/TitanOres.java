@@ -8,6 +8,7 @@ import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import com.titanmodpack.titanores.compat.CuriosCompat;
+import com.titanmodpack.titanores.compat.mekanism.MekanismCompat;
 import com.titanmodpack.titanores.network.ModNetwork;
 import com.titanmodpack.titanores.init.ModBlocks;
 import com.titanmodpack.titanores.init.ModItems;
@@ -44,6 +45,9 @@ public class TitanOres {
         ModRecipes.SERIALIZERS.register(modEventBus);
         ModContainers.CONTAINERS.register(modEventBus);
         ModNetwork.register();
+        if (ModList.get().isLoaded(MekanismCompat.MOD_ID)) {
+            MekanismCompat.register(modEventBus);
+        }
 
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::clientSetup);

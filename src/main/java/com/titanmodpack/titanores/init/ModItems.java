@@ -40,6 +40,10 @@ public class ModItems {
     public static final RegistryObject<Item> SOLARITE_INGOT = ITEMS.register("solarite_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_NUGGET = ITEMS.register("solarite_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_DUST = ITEMS.register("solarite_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> SOLARITE_DIRTY_DUST = ITEMS.register("solarite_dirty_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> SOLARITE_CLUMP = ITEMS.register("solarite_clump", ModItems::simpleItem);
+    public static final RegistryObject<Item> SOLARITE_SHARD = ITEMS.register("solarite_shard", ModItems::simpleItem);
+    public static final RegistryObject<Item> SOLARITE_CRYSTAL = ITEMS.register("solarite_crystal", ModItems::simpleItem);
     public static final RegistryObject<Item> SOLARITE_SEED = ITEMS.register("solarite_seed",
             () -> new BlockNamedItem(ModBlocks.SOLARITE_CROP.get(), props()));
     public static final RegistryObject<Item> SOLARITE_ESSENCE = ITEMS.register("solarite_essence", ModItems::simpleItem);
@@ -75,6 +79,10 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERITE_INGOT = ITEMS.register("emberite_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_NUGGET = ITEMS.register("emberite_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_DUST = ITEMS.register("emberite_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERITE_DIRTY_DUST = ITEMS.register("emberite_dirty_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERITE_CLUMP = ITEMS.register("emberite_clump", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERITE_SHARD = ITEMS.register("emberite_shard", ModItems::simpleItem);
+    public static final RegistryObject<Item> EMBERITE_CRYSTAL = ITEMS.register("emberite_crystal", ModItems::simpleItem);
     public static final RegistryObject<Item> EMBERITE_SEED = ITEMS.register("emberite_seed",
             () -> new BlockNamedItem(ModBlocks.EMBERITE_CROP.get(), props()));
     public static final RegistryObject<Item> EMBERITE_ESSENCE = ITEMS.register("emberite_essence", ModItems::simpleItem);
@@ -110,6 +118,10 @@ public class ModItems {
     public static final RegistryObject<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_DUST = ITEMS.register("titanium_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> TITANIUM_DIRTY_DUST = ITEMS.register("titanium_dirty_dust", ModItems::simpleItem);
+    public static final RegistryObject<Item> TITANIUM_CLUMP = ITEMS.register("titanium_clump", ModItems::simpleItem);
+    public static final RegistryObject<Item> TITANIUM_SHARD = ITEMS.register("titanium_shard", ModItems::simpleItem);
+    public static final RegistryObject<Item> TITANIUM_CRYSTAL = ITEMS.register("titanium_crystal", ModItems::simpleItem);
     public static final RegistryObject<Item> TITANIUM_SEED = ITEMS.register("titanium_seed",
             () -> new BlockNamedItem(ModBlocks.TITANIUM_CROP.get(), props()));
     public static final RegistryObject<Item> TITANIUM_ESSENCE = ITEMS.register("titanium_essence", ModItems::simpleItem);

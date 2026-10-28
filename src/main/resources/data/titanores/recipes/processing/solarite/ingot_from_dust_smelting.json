@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:dusts/solarite"
+  },
+  "result": "titanores:solarite_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

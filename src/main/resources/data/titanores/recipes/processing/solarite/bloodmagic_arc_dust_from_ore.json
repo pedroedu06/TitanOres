@@ -1,0 +1,20 @@
+{
+  "type": "bloodmagic:arc",
+  "input": {
+    "tag": "forge:ores/solarite"
+  },
+  "tool": {
+    "tag": "bloodmagic:arc/cuttingfluid"
+  },
+  "output": {
+    "item": "titanores:solarite_dust",
+    "count": 2
+  },
+  "consumeingredient": false,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "bloodmagic"
+    }
+  ]
+}
