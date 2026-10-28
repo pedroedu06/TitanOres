@@ -74,7 +74,7 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   `<ore>_essence` (tags `forge:seeds`, `titanores:essences`); `blue_soil` (cube_bottom_top, shovel; recipe via KubeJS in
   the modpack). `block/EssenceCropBlock`: grows ONLY on blue_soil (overrides canSurvive; vanilla asks for farmland),
   1-in-5 chance per random tick (slower than wheat); `event/CropEvents` cancels vanilla bone meal (other mods' growth
-  items/accelerators still work). Mature drop: 1 essence + 1 seed. 8 essences (ring) -> 1 nugget. Crop stage textures
+  items/accelerators still work). Mature drop: 1 essence + 1 seed + 25% chance of an extra seed. 8 essences (ring) -> 1 nugget. Crop stage textures
   (`textures/block/crop/`) are from Mystical Agriculture (MIT, credited in README + `resources/licenses/`), final
   stage recolored per ore. NEXT (part 3): Mekanism 5x processing (clump/crystal/shard + hot/cold fluids, textures in
   `textures/item/mekanism/`).
