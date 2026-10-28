@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:dusts/emberite"
+  },
+  "result": "titanores:emberite_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#mekanism:crystals/solarite",
+    "#mekanism:crystals/emberite",
+    "#mekanism:crystals/titanium"
+  ]
+}

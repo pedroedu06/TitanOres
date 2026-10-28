@@ -1,0 +1,18 @@
+{
+  "type": "immersiveengineering:crusher",
+  "secondaries": [],
+  "result": {
+    "item": "titanores:titanium_dust",
+    "count": 2
+  },
+  "input": {
+    "tag": "forge:ores/titanium"
+  },
+  "energy": 6000,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

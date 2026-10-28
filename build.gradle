@@ -151,6 +151,7 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
 
     // Test-only mods (not dependencies of TitanOres): energy sources/cables to test the Titan Factory.
+    compileOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}:api")
     runtimeOnly fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}")
     runtimeOnly fg.deobf("curse.maven:powah-352656:${powah_file_id}")
     runtimeOnly fg.deobf("curse.maven:lollipop-347954:${lollipop_file_id}")

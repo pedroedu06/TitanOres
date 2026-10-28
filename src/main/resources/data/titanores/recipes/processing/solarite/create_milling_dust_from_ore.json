@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "forge:ores/solarite"
+    }
+  ],
+  "results": [
+    {
+      "item": "titanores:solarite_dust",
+      "count": 2
+    }
+  ],
+  "processingTime": 300,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}
