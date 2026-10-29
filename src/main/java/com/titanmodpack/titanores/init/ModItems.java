@@ -1,6 +1,7 @@
 package com.titanmodpack.titanores.init;
 
 import com.titanmodpack.titanores.TitanOres;
+import com.titanmodpack.titanores.item.ForgeUpgradeItem;
 import com.titanmodpack.titanores.item.GlowingItem;
 import com.titanmodpack.titanores.item.ModItemTier;
 import com.titanmodpack.titanores.item.OreBlockItem;
@@ -219,6 +220,16 @@ public class ModItems {
     public static final RegistryObject<Item> TITAN_FACTORY = ITEMS.register("titan_factory", () -> blockItem(ModBlocks.TITAN_FACTORY.get()));
     public static final RegistryObject<Item> TITAN_CRAFTER = ITEMS.register("titan_crafter", () -> blockItem(ModBlocks.TITAN_CRAFTER.get()));
     public static final RegistryObject<Item> BLUE_SOIL = ITEMS.register("blue_soil", () -> blockItem(ModBlocks.BLUE_SOIL.get()));
+
+    // Hephaestus Forge (Forbidden & Arcanus) tier upgrades, made by rituals in the modpack.
+    public static final RegistryObject<Item> FORGE_UPGRADE_TIER_2 = ITEMS.register("forge_upgrade_tier_2",
+            () -> new ForgeUpgradeItem(props().rarity(Rarity.UNCOMMON).stacksTo(16), 2));
+    public static final RegistryObject<Item> FORGE_UPGRADE_TIER_3 = ITEMS.register("forge_upgrade_tier_3",
+            () -> new ForgeUpgradeItem(props().rarity(Rarity.RARE).stacksTo(16), 3));
+    public static final RegistryObject<Item> FORGE_UPGRADE_TIER_4 = ITEMS.register("forge_upgrade_tier_4",
+            () -> new ForgeUpgradeItem(props().rarity(Rarity.RARE).stacksTo(16), 4));
+    public static final RegistryObject<Item> FORGE_UPGRADE_TIER_5 = ITEMS.register("forge_upgrade_tier_5",
+            () -> new ForgeUpgradeItem(props().rarity(Rarity.EPIC).stacksTo(16), 5));
 
     // Final items (modpack endgame components; their recipes come from KubeJS in the modpack).
     // Textures live in textures/item/finalitens/.

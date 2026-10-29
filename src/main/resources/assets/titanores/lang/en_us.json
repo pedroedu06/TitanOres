@@ -139,5 +139,11 @@
   "item.titanores.titanium_shard": "Titanium Shard",
   "item.titanores.titanium_crystal": "Titanium Crystal",
   "slurry.titanores.dirty_titanium": "Dirty Titanium Slurry",
-  "slurry.titanores.clean_titanium": "Clean Titanium Slurry"
+  "slurry.titanores.clean_titanium": "Clean Titanium Slurry",
+  "item.titanores.forge_upgrade_tier_2": "Forge Upgrade (Tier II)",
+  "item.titanores.forge_upgrade_tier_3": "Forge Upgrade (Tier III)",
+  "item.titanores.forge_upgrade_tier_4": "Forge Upgrade (Tier IV)",
+  "item.titanores.forge_upgrade_tier_5": "Forge Upgrade (Tier X)",
+  "message.titanores.forge_upgrade.wrong_tier": "This upgrade needs a tier %s Hephaestus Forge (it makes it tier %s)",
+  "message.titanores.forge_upgrade.done": "Hephaestus Forge upgraded to tier %s!"
 }

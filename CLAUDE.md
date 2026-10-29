@@ -62,7 +62,12 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   198 px wide, so the Titan Crafter category uses a compact custom layout (180 px) instead of its 240 px GUI.
 - Final items (10, all created): endgame components for the modpack. RECIPE RULE (user): recipes using only
   vanilla + this mod's items go IN THE MOD (JSON); KubeJS in the modpack only for recipes needing other mods' items. All final items follow the Source Crystal style (epic rarity, no glow,
-  no tooltip, no code comments). Docs: own page `docs/final-items.md` (table + one section per item). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
+  no tooltip, no code comments). Modpack recipes that need other mods live in the PACK repo:
+  `C:/Users/Pedro/curseforge/minecraft/Instances/TitanMods/kubejs/server_scripts/titan_final_items.js`
+  (Sponge Bob = Create mechanical crafting 7x8). Recipe types without a KubeJS helper go as JSON in the pack's
+  `kubejs/data/titanmodpack/...` (datapack): Source Crystal = Forbidden & Arcanus Hephaestus Forge rituals
+  (`hephaestus_forge/rituals/source_crystal_<fire|ice|lightning>_heart.json`; FA 1.16 forge has ONLY 6 PEDESTALS (max 6 inputs, slots 0-5); inputs are single items, no tags, and
+  position-independent; essences 600 aureal / 8 souls / 20000 blood / 350 XP = needs forge tier 3+). Docs: own page `docs/final-items.md` (table + one section per item). Done so far: `source_crystal`, `sponge_bob` (made with Create in the modpack),
   `ancestral_seed`, `world_core`. `raid_king` (crown): `item/RaidKingItem` (HEAD equipment slot, no armor, NBT `HeroLevel`) +
   `event/RaidKingEvents`: drops where the last raider dies once a raid with `getBadOmenLevel() >= getMaxBadOmenLevel()`
   turns `isVictory()` (pending map per world, checked on WorldTick); worn on head or Curios `head` slot -> Hero of the
@@ -83,6 +88,11 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
   conditions: Mekanism 2x-5x chain (copied from Mekanism's iron), 2x dust in IE crusher, Create crushing+milling,
   Occultism crushing, Blood Magic ARC; dust -> ingot smelting/blasting. No Thermal (pack has no Thermal Expansion).
   NEXT: `fluid/hot_<ore>_*` = Tinkers molten metal (ask what the "cold" liquid means there); Botany Pots via KubeJS.
+- Forbidden & Arcanus compat: FA 16.2.3 Hephaestus Forge tiers can't be upgraded in survival (Level only read from
+  NBT). `item/ForgeUpgradeItem` (`forge_upgrade_tier_2..5`, 5 = "X") right-clicked on `forbidden_arcanus:hephaestus_forge`
+  raises the NBT Level by one (no compile dependency). Upgrade rituals (adapted from FA 1.21.1, essences scaled to the
+  1.16 tier caps) live in the pack's `kubejs/data/titanmodpack/hephaestus_forge/rituals/`. Textures generated in
+  `textures/item/forge_upgrade/`. Mod version 1.0.2.
 - Ore tooltips: `item/OreBlockItem` adds 2 gold lines (lang `tooltip.titanores.<ore>.where/.height`; pickaxe
   left to Waila/Jade, user's choice);
   keep them in sync with `world/ModOreGeneration` and the tiers.
