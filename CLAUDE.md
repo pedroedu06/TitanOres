@@ -1,6 +1,6 @@
 # TitanOres — project context
 
-Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner in modding — explain steps in
+Endgame ore progression mod for the **TitanMods** modpack. Author: Pedro (beginner in modding — explain steps in
 **Portuguese** in chat; keep everything inside the mod in **English**).
 
 ## Stack
@@ -71,7 +71,7 @@ Endgame ore progression mod for the **Titan Modpack**. Author: Pedro (beginner i
 
 ## Documentation (separate repo — keep it updated after EVERY change)
 - `D:\projetos\Mods\TitanOres_doc` — Material for MkDocs, GitHub Pages.
-- After mod changes: `python scripts/sync_from_mod.py ../TitanOres`, update the page + `docs/changelog.md`,
+- After mod changes: `python scripts/sync_from_mod.py` (reads ../TitanOres AND ../TitanUtilities), update the page + `docs/changelog.md`,
   then `python -m mkdocs build --strict`.
 
 ## Git

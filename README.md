@@ -1,6 +1,6 @@
 # TitanOres
 
-Endgame ore progression mod for the **Titan Modpack** (Minecraft 1.16.5, Forge 36.2.42).
+Endgame ore progression mod for the **TitanMods** modpack (Minecraft 1.16.5, Forge 36.2.42).
 
 Documentation: <https://pedroedu06.github.io/TitanOres_documentacion/>
 
