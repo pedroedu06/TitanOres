@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "titanores:block/soil/blue_soil_top",
-    "side": "titanores:block/soil/blue_soil_side",
-    "bottom": "titanores:block/soil/blue_soil_bottom"
-  }
-}

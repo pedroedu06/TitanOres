@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "titanores:item/finalitens/music_disc_titanium"
-  }
-}
