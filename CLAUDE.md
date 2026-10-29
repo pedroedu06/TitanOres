@@ -62,6 +62,7 @@ Endgame ore progression mod for the **TitanMods** modpack. Author: Pedro (beginn
   `fluid/cold_<ore>_still`, dirty is a darkened copy). Recipes in `recipes/processing/<ore>/` with `forge:mod_loaded`
   conditions: Mekanism 2x-5x chain (copied from Mekanism's iron), 2x dust in IE crusher, Create crushing+milling,
   Occultism crushing, Blood Magic ARC; dust -> ingot smelting/blasting. No Thermal (pack has no Thermal Expansion).
+  Seed recipes (Infusion Altar) and Botany Pots support live in the pack's `kubejs/server_scripts/titan_farming.js`.
   NEXT: `fluid/hot_<ore>_*` = Tinkers molten metal (ask what the "cold" liquid means there); Botany Pots via KubeJS.
 - Forbidden & Arcanus compat: the Forge Upgrades (`forge_upgrade_tier_2..5`) MOVED TO TITAN UTILITIES (TitanOres 1.0.4,
   ids `titanutilities:*`). The Source Crystal rituals in the pack still give `titanores:source_crystal`.
